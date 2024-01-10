@@ -8,7 +8,7 @@ const NavBar = () => {
       <div className="navbar-start">
         <div className="dropdown">
           <Link to={"/"}>
-            <img src={Logo} alt="SphereWise Technology Logo" className='max-h-[50px]' />
+            <img src={Logo} alt="SphereWise Technology Logo" className='max-h-[55px]' />
           </Link>
         </div>
       </div>
@@ -32,7 +32,7 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-active btn-info"><i className="fa-solid fa-phone"></i> Contact Us </a>
+        <a className="btn btn-info"><i className="fa-solid fa-phone"></i> Contact Us </a>
       </div>
     </div>
 
