@@ -1,4 +1,6 @@
 import React from 'react'
+import MRLogo from '../assets/ourCients/M&RSolutions.png'
+import PPLogo from '../assets/ourCients/PuppyPoodle.svg'
 
 export const Home = () => {
   return (
@@ -96,8 +98,27 @@ export const Home = () => {
       </div> */}
       <div className="row mt-3">
         <h3 className="text-left text-4xl mt-5 mb-5">Our Clients</h3>
-        <div className="grid grid-cols-4 gap-8">
-
+        <div className="grid grid-cols-5 gap-8">
+          <div>
+            <img src={MRLogo} alt="M&R Solutions" />
+            <h6>M&R Solutions</h6>
+          </div>
+          <div>
+            <img src={PPLogo} alt="Puppy Poodle" />
+            <h6>Puppy Poodle</h6>
+          </div>
+          <div>
+            <img src={PPLogo} alt="Gramina US" />
+            <h6>Gramina US</h6>
+          </div>
+          <div>
+            <img src={PPLogo} alt="Gramina RS" />
+            <h6>Gramina RS</h6>
+          </div>
+          <div>
+            <img src={PPLogo} alt="Ljuba Popovic" />
+            <h6>Ljuba Popovic Photography</h6>
+          </div>
         </div>
       </div>
       <div className="row mt-3">
