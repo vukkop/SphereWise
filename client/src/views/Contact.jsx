@@ -51,22 +51,27 @@ const Contact = () => {
 
   return (
     <>
-      <h2 className='text-5xl mt-5 mb-5'>Contact Us</h2>
-      <div className='flex flex-col w-full lg:flex-row mt-5'>
-        <div className='grid flex-grow text-center'>
+      <h2 className='text-5xl mt-5 mb-7'>Contact Us</h2>
+      <div className='flex flex-col w-full lg:flex-row min-h-[65vh]'>
+        <div className='grid flex-grow text-center '>
+
           <div>
-            <h4 className="text-3xl mt-5 mb-2">Email:</h4>
-            <a href="mailto:#" className="text-xl mb-5 underline">Click here to email us</a>
+            <div className='mt-5 mb-7'>
+              <h4 className="text-3xl mb-1">Email:</h4>
+              <a href="mailto:#" className="text-xl underline">Click here to email us</a>
+            </div>
+            <div className='mt-5 mb-7'>
+              <h4 className="text-3xl mb-1">Phone:</h4>
+              <a className="text-xl underline" href="tel:+">+1 234 456 4567</a>
+            </div>
+            <div className='mt-5 mb-7'>
+              <h4 className="text-3xl mb-1">Address:</h4>
+              <a className="text-xl underline" href='#'>1310 Richards Street, Vanvouver, BC, Canada</a>
+            </div>
           </div>
-          <div>
-            <h4 className="text-3xl mt-5 mb-2">Phone:</h4>
-            <a className="text-xl mb-5 underline" href="tel:+">+1 234 456 4567</a>
-          </div>
-          <div>
-            <h4 className="text-3xl mt-5 mb-2">Address:</h4>
-            <a className="text-xl mb-5 underline" href='#'>1310 Richards Street, Vanvouver, BC, Canada</a>
-          </div>
+
         </div>
+
 
 
         <div className="divider lg:divider-horizontal">OR</div>
