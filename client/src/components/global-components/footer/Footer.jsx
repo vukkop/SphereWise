@@ -25,7 +25,6 @@ const Footer = () => {
           <h5 className='text-xl mb-4'>SphereWise Tech</h5>
           <ul>
             <li className='mb-2'>1310 Richards Street, Vanvouver, BC, Canada</li>
-
           </ul>
         </div>
 
