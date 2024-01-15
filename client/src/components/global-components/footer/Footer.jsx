@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='bg-base-300 mt-5 pt-3'>
+    <div className='bg-base-200 mt-5 pt-3'>
       <div className="grid grid-cols-3 gap-8 container mx-auto mb-3">
 
         <div>
@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
 
       </div>
-      <div className="bg-base-200 py-3">
+      <div className="bg-base-300 py-3">
         <h6 className='text-center'>© 2024 SphereWise Tech. All rights reserved.</h6>
       </div>
     </div>
