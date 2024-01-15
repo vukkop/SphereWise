@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [contactForm, setContactForm] = useState({
@@ -10,31 +11,31 @@ const Contact = () => {
   const [status, setStatus] = useState("");
   const form = useRef()
 
-  // const sendEmail = (e) => {
-  //   emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
-  //     .then((result) => {
-  //       setStatus("200")
-  //       console.log(result.text, "Status is 200");
-  //       setTimeout(() => {
-  //         setStatus("");
-  //       }, 4000);
-  //     }, (error) => {
-  //       setStatus("500")
-  //       console.log(error.text);
-  //       setTimeout(() => {
-  //         setStatus("");
-  //       }, 4000);
-  //     });
-  // };
+  const sendEmail = (e) => {
+    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
+      .then((result) => {
+        setStatus("200")
+        console.log(result.text, "Status is 200");
+        // Add toastr confirmation
+        setTimeout(() => {
+          setStatus("");
+        }, 4000);
+      }, (error) => {
+        setStatus("500")
+        console.log(error.text);
+        setTimeout(() => {
+          setStatus("");
+        }, 4000);
+      });
+  };
 
   const handleSubmit = e => {
     e.preventDefault();
-    // sendEmail(e)
+    sendEmail(e)
     setContactForm({
       name: '',
       email: '',
       phoneNumber: '',
-      subject: '',
       message: '',
     })
   }
@@ -82,7 +83,7 @@ const Contact = () => {
             <div className="label">
               <span className="label-text">Name:</span>
             </div>
-            <input type="text" name='name' placeholder="ex: John Smith" className="input input-bordered w-full max-w-xs" />
+            <input type="text" name='name' onChange={onChangeHandler} value={contactForm.name} placeholder="ex: John Smith" className="input input-bordered w-full max-w-xs" />
             {/* <div className="label">
           <span className="label-text-alt">Bottom Left label</span>
         </div> */}
@@ -91,7 +92,7 @@ const Contact = () => {
             <div className="label">
               <span className="label-text">Email:</span>
             </div>
-            <input type="email" name='email' placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+            <input type="email" name='email' onChange={onChangeHandler} value={contactForm.email} placeholder="Type here" className="input input-bordered w-full max-w-xs" />
             {/* <div className="label">
           <span className="label-text-alt">Bottom Left label</span>
         </div> */}
@@ -100,7 +101,7 @@ const Contact = () => {
             <div className="label">
               <span className="label-text">Phone number:</span>
             </div>
-            <input type="text" name='phoneNumber' placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+            <input type="text" name='phoneNumber' onChange={onChangeHandler} value={contactForm.phoneNumber} placeholder="Type here" className="input input-bordered w-full max-w-xs" />
             {/* <div className="label">
           <span className="label-text-alt">Bottom Left label</span>
         </div> */}
@@ -109,7 +110,7 @@ const Contact = () => {
             <div className="label">
               <span className="label-text">Message:</span>
             </div>
-            <textarea name='message' className="textarea textarea-bordered h-24 w-[80%] mb-4" placeholder="Message"></textarea>
+            <textarea name='message' onChange={onChangeHandler} value={contactForm.message} className="textarea textarea-bordered h-24 w-[80%] mb-4" placeholder="Message"></textarea>
             {/* <div className="label">
             <span className="label-text-alt">Your bio</span>
           </div> */}
