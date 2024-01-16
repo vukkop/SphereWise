@@ -8,23 +8,37 @@ const Contact = () => {
     phoneNumber: '',
     message: '',
   });
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState(0);
+  const [loading, setLoading] = useState(false);
   const form = useRef()
 
   const sendEmail = (e) => {
+    setLoading(true)
+
+    //Add better validation, and handle toastr behaviour in separate reusable function
+    if (!contactForm.name.trim() || !contactForm.email.trim() || !contactForm.phoneNumber.trim() || !contactForm.message.trim()) {
+      setStatus(500)
+      setLoading(false)
+      setTimeout(() => {
+        setStatus(0);
+      }, 4000);
+      return;
+    }
+
     emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
       .then((result) => {
-        setStatus("200")
-        console.log(result.text, "Status is 200");
-        // Add toastr confirmation
+        setStatus(result.status)
+        console.log(result, "Status is 200");
+        setLoading(false)
         setTimeout(() => {
-          setStatus("");
+          setStatus(0);
         }, 4000);
       }, (error) => {
-        setStatus("500")
-        console.log(error.text);
+        setStatus(error.status)
+        console.log(error);
+        setLoading(false)
         setTimeout(() => {
-          setStatus("");
+          setStatus(0);
         }, 4000);
       });
   };
@@ -116,10 +130,36 @@ const Contact = () => {
           </div> */}
           </label>
           <div>
-            <button type='submit' className="btn btn-success float-start">Send message</button>
+            {loading ?
+              <button disabled type='submit' className="btn btn-success float-start">
+                <span className="loading loading-spinner"></span>
+                Sending message
+              </button>
+              :
+              <button type='submit' className="btn btn-success float-start">
+                <span>
+                  Send message
+                </span>
+              </button>
+            }
           </div>
-        </form>
-      </div>
+        </form >
+
+        {status !== 0 &&
+          <div className="toast toast-end">
+            {status === 200 &&
+              <div className="alert alert-success">
+                <span><i className="fa-solid fa-circle-check text-xl"></i> Message sent successfully.</span>
+              </div>
+            }
+            {status === 500 &&
+              <div className="alert alert-error">
+                <span><i className="fa-solid fa-triangle-exclamation text-xl"></i> Message was not sent.</span>
+              </div>
+            }
+          </div>
+        }
+      </div >
     </>
   )
 }
