@@ -51,7 +51,7 @@ function App() {
         />
         <meta
           name="twitter:description"
-          content="Find adorable Poodle puppies looking for new homes. Our Mini Poodles are playful and well-trained, perfect for families."
+          content="Transforming businesses with custom web development and software solutions. We specialize in creating tailored digital experiences for your unique needs."
         />
         <meta name="twitter:image" content="../assets/logo/Logo_light_background.png" />
         {/* <meta name="twitter:creator" content="@yourtwitterhandle" /> */}
