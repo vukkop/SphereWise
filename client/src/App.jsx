@@ -74,7 +74,7 @@ function App() {
         {/* Additional Custom Meta Tags */}
         {/* Add any additional meta tags that are relevant to your content and SEO strategy */}
       </Helmet>
-      <div className="App container mx-auto ">
+      <div className="App">
         <div>
           <NavBar></NavBar>
         </div>
