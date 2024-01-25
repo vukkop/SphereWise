@@ -1,38 +1,39 @@
 import React from 'react'
+import Logo from '../../../assets/logo/Side_Logo_full_dark_background.png'
 
 const Footer = () => {
   return (
-    <div className='bg-base-200 mt-5 pt-3'>
-      <div className="grid grid-cols-3 gap-8 container mx-auto mb-3">
+    <>
+      <footer className="footer p-8 bg-base-200 text-base-content">
+        <aside>
+          <img src={Logo} width='100%' />
+          <p >SphereWise Tech<br />1310 Richards Street, Vanvouver, BC, Canada</p>
+        </aside>
+        <nav>
+          <h6 className="footer-title">Services</h6>
+          <a className="link link-hover">Websites</a>
+          <a className="link link-hover">Apps</a>
+          <a className="link link-hover">Custom Software</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Company</h6>
+          <a className="link link-hover">About us</a>
+          <a className="link link-hover">Contact</a>
+          <a className="link link-hover">Overview</a>
+          <a className="link link-hover">Our Story</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Legal</h6>
+          <a className="link link-hover">Terms of use</a>
+          <a className="link link-hover">Privacy policy</a>
+          <a className="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
 
-        <div>
-          <h5 className='text-xl mb-4'>Services</h5>
-          <ul>
-            <li className='mb-2'>Websites</li>
-            <li className='mb-2'>Apps</li>
-            <li className='mb-2'>Custom Software</li>
-          </ul>
-        </div>
-        <div>
-          <h5 className='text-xl mb-4'>About</h5>
-          <ul>
-            <li className='mb-2'>Overview</li>
-            <li className='mb-2'>Team</li>
-            <li className='mb-2'>Our Story</li>
-          </ul>
-        </div>
-        <div>
-          <h5 className='text-xl mb-4'>SphereWise Tech</h5>
-          <ul>
-            <li className='mb-2'>1310 Richards Street, Vanvouver, BC, Canada</li>
-          </ul>
-        </div>
-
-      </div>
       <div className="bg-base-300 py-3">
         <h6 className='text-center'>© 2024 SphereWise Tech. All rights reserved.</h6>
       </div>
-    </div>
+    </>
   )
 }
 
