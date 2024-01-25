@@ -62,7 +62,7 @@ const Contact = () => {
 
   return (
     <div className='container mx-auto'>
-      <h2 className='text-5xl mt-5'>Contact Us</h2>
+      <h2 className='text-4xl font-bold my-8'>Contact Us</h2>
       <div className='flex flex-col w-full lg:flex-row min-h-[65vh] my-6'>
 
         <div className='grid flex-grow text-center '>

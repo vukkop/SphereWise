@@ -22,19 +22,22 @@ const Services = () => {
 
 
   return (
-    <div className="min-h-[80vh] p-8">
-      <h1 className="text-4xl font-bold mb-8">Our Services</h1>
+    <div className='container mx-auto'>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {services.map((service, index) => (
-          <div key={index} className="card card-compact w-96 bg-base-100 shadow-xl">
-            <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-            <div className="card-body">
-              <h2 className="text-2xl font-bold mb-4">{service.title}</h2>
-              <p className="text-gray-500">{service.description}</p>
+      <div className="min-h-[80vh] p-8">
+        <h1 className="text-4xl font-bold mb-8">Our Services</h1>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <div key={index} className="card card-compact bg-base-100 shadow-xl">
+              <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+              <div className="card-body">
+                <h2 className="text-2xl font-bold mb-4">{service.title}</h2>
+                <p className="text-gray-500">{service.description}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
