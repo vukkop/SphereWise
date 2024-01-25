@@ -60,16 +60,12 @@ const Contact = () => {
       ({ ...prev, [name]: value }))
   }
 
-
-
-
-
   return (
-    <>
-      <h2 className='text-5xl mt-5 mb-7'>Contact Us</h2>
-      <div className='flex flex-col w-full lg:flex-row min-h-[65vh]'>
-        <div className='grid flex-grow text-center '>
+    <div className='container mx-auto'>
+      <h2 className='text-5xl mt-5'>Contact Us</h2>
+      <div className='flex flex-col w-full lg:flex-row min-h-[65vh] my-6'>
 
+        <div className='grid flex-grow text-center '>
           <div>
             <div className='mt-5 mb-7'>
               <h4 className="text-3xl mb-1">Email:</h4>
@@ -84,9 +80,7 @@ const Contact = () => {
               <a className="text-xl underline" href='#'>1310 Richards Street, Vanvouver, BC, Canada</a>
             </div>
           </div>
-
         </div>
-
 
 
         <div className="divider lg:divider-horizontal">OR</div>
@@ -160,7 +154,7 @@ const Contact = () => {
           </div>
         }
       </div >
-    </>
+    </div>
   )
 }
 
