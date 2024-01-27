@@ -34,7 +34,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn btn-info"><i className="fa-solid fa-phone"></i> Contact Us </a>
+          <Link to={"/contact"} className="btn btn-info"><i className="fa-solid fa-phone"></i> Contact Us </Link>
         </div>
       </div>
     </div>

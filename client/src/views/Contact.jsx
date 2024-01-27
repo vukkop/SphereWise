@@ -69,7 +69,7 @@ const Contact = () => {
           <div>
             <div className='mt-5 mb-7'>
               <h4 className="text-3xl mb-1">Email:</h4>
-              <a href="mailto:#" className="text-xl underline">Click here to email us</a>
+              <a href="mailto:spherewisetech@gmail.com" className="text-xl underline">Click here to email us</a>
             </div>
             <div className='mt-5 mb-7'>
               <h4 className="text-3xl mb-1">Phone:</h4>
