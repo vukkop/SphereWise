@@ -80,7 +80,7 @@ export const Home = () => {
         <div className='container mx-auto'>
           <h3 className="text-left text-4xl ">How We Work</h3>
           <h5 className="text-left text-xl my-3 w-[50%]">We combine the industry's best service delivery standards with unprecedented solution personalization practices.</h5>
-          <div className="grid grid-cols-4 gap-8">
+          {/* <div className="grid grid-cols-4 gap-8">
             <div className="card bg-base-100 shadow-xl">
               <div className="card-body">
                 <h2 className="card-title">Write to us or book a meeting</h2>
@@ -107,7 +107,44 @@ export const Home = () => {
                 <p>We start delivering the results while keeping you updated on the progress.</p>
               </div>
             </div>
+          </div> */}
+
+
+          <div class="w-full px-4">
+
+            <div class="max-w-3xl mx-auto text-left">
+              <div class="md:max-w-xl lg:-ml-20 my-8 md:h-40 card bg-base-100 shadow-xl">
+                <div className="card-body">
+                  <h2 className="card-title">Write to us or book a meeting</h2>
+                  <p>We will respond within two hours and arrange a meeting with you at your earliest convenience.</p>
+                </div>
+              </div>
+
+              <div class="md:max-w-xl mb-8 md:h-40 card bg-base-100 shadow-xl">
+                <div className="card-body">
+                  <h2 className="card-title">Meet with our representative</h2>
+                  <p>An expert matching your market niche and industry will get in touch to discuss your requests and determine the next steps.</p>
+                </div>
+              </div>
+
+              <div class="md:max-w-xl lg:ml-20 mb-8 md:h-40 card bg-base-100 shadow-xl">
+                <div className="card-body">
+                  <h2 className="card-title">Receive an offer</h2>
+                  <p>You will get a service suite offering, including time and cost estimates, for each of your project's stages.</p>
+                </div>
+              </div>
+
+              <div class="md:max-w-xl lg:ml-40 md:h-40 card bg-base-100 shadow-xl">
+                <div className="card-body">
+                  <h2 className="card-title">Sign the offer</h2>
+                  <p>We start delivering the results while keeping you updated on the progress.</p>
+                </div>
+              </div>
+            </div>
           </div>
+
+
+
         </div>
       </div>
 
