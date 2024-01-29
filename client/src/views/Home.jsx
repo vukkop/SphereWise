@@ -2,6 +2,7 @@ import React from 'react'
 import Idea from '../assets/images/idea.jpg'
 import MRLogo from '../assets/ourCients/M&RSolutions.png'
 import PPLogo from '../assets/ourCients/PuppyPoodle.svg'
+import LPLogo from '../assets/ourCients/Ljuba_dark.png'
 
 export const Home = () => {
   return (
@@ -173,9 +174,9 @@ export const Home = () => {
               <img src={PPLogo} alt="Gramina RS" />
               <h6 className='text-xl font-semibold mb-1'>Gramina RS</h6>
             </div>
-            <div>
-              <img src={PPLogo} alt="Ljuba Popovic" />
-              <h6 className='text-xl font-semibold mb-1'>Ljuba Popovic Photography</h6>
+            <div className='flex flex-col justify-end'>
+              <img src={LPLogo} alt="Ljuba Popovic" />
+              <h6 className='text-xl font-semibold mb-1 mt-3'>Ljuba Popovic Photography</h6>
             </div>
           </div>
         </div>
