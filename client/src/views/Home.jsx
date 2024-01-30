@@ -1,5 +1,6 @@
 import React from 'react'
-import Idea from '../assets/images/idea.jpg'
+import Hero from '../components/home-components/Hero'
+import HowWeWork from '../components/home-components/HowWeWork'
 import MRLogo from '../assets/ourCients/M&RSolutions.png'
 import PPLogo from '../assets/ourCients/PuppyPoodle.svg'
 import LPLogo from '../assets/ourCients/Ljuba_dark.png'
@@ -7,43 +8,8 @@ import LPLogo from '../assets/ourCients/Ljuba_dark.png'
 export const Home = () => {
   return (
     <>
+      <Hero />
       <div className='container mx-auto'>
-        <div className="hero min-h-screen">
-          <div className="hero-content flex-col lg:flex-row-reverse">
-            <div className='relative h-[70vh] w-full rounded-tr-2xl rounded-br-2xl overflow-hidden border-none'>
-              <img src={Idea} className="absolute insert-0 h-full w-full object-cover filter grayscale contrast-200 " />
-              <div className='absolute insert-0 h-full w-full bg-gradient-to-r from-base-100 to-transparent'></div>
-            </div>
-            <div className='w-[70%]'>
-              <h2 className="text-left text-4xl mt-5">Tailored Solutions for Every Business Size</h2>
-              <p className="text-left mt-5">At SphereWise Tech, we champion the growth of businesses, regardless of size. Our bespoke website and software solutions aren't confined by scale; they're crafted to elevate small businesses to new heights. We believe that no endeavor is too modest. From startups to local enterprises, our commitment remains steadfast in delivering intuitive websites and custom software that catalyze growth. Our focus? Empowering every business, ensuring they harness the power of technology to expand their horizons and redefine success. Let's embark on this journey together—transforming small ventures into impactful enterprises, one innovative solution at a time.
-              </p>
-              <div className="justify-center mt-3 mb-3">
-                <button className="btn btn-outline btn-info">Find Out More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="row my-10">
-          <h3 className="text-left text-4xl mb-5">What We Do</h3>
-          <div className="grid grid-cols-2 gap-8">
-            <div className="card bg-neutral shadow-xl">
-              <div className="card-body">
-                <h2 className="text-center text-3xl">Websites</h2>
-                <p className="text-left mt-5">Our websites aren't merely virtual storefronts; they're strategic assets meticulously designed to attract, engage, and convert visitors into loyal customers. With a keen focus on user experience and responsive design, we ensure that your online presence reflects the essence of your brand while driving tangible results. Furthermore, our custom software solutions are tailored to address the unique challenges faced by small businesses. From automating processes to enhancing productivity, our software solutions are crafted to be the catalysts that fuel growth and scalability.
-                </p>
-              </div>
-            </div>
-            <div className="card  bg-neutral shadow-xl">
-              <div className="card-body">
-                <h2 className="text-center text-3xl">Custom Software</h2>
-                <p className="text-left mt-5">At SphereWise Tech, we understand that the journey of a small business is dynamic and multifaceted. That's why our dedicated team collaborates closely with you, listening to your aspirations and challenges. By aligning our expertise with your vision, we forge solutions that not only meet your immediate needs but also lay the groundwork for sustainable success. Through our comprehensive suite of software solutions, we aim not just to meet expectations but to exceed them, empowering small businesses to thrive in a digitally-driven world.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <div className="row my-10">
           <h3 className="text-left text-4xl mt-5 mb-5">Choosing Us</h3>
@@ -95,77 +61,7 @@ export const Home = () => {
 
       </div>
 
-      <div className="row bg-neutral my-10 p-8">
-        <div className='container mx-auto'>
-          <h3 className="text-left text-4xl ">How We Work</h3>
-          <h5 className="text-left text-xl my-3 w-[50%]">We combine the industry's best service delivery standards with unprecedented solution personalization practices.</h5>
-          {/* <div className="grid grid-cols-4 gap-8">
-            <div className="card bg-base-100 shadow-xl">
-              <div className="card-body">
-                <h2 className="card-title">Write to us or book a meeting</h2>
-                <p>We will respond within two hours and arrange a meeting with you at your earliest convenience.</p>
-              </div>
-            </div>
-
-            <div className="card bg-base-100 shadow-xl">
-              <div className="card-body">
-                <h2 className="card-title">Meet with our representative</h2>
-                <p>An expert matching your market niche and industry will get in touch to discuss your requests and determine the next steps.</p>
-              </div>
-            </div>
-
-            <div className="card bg-base-100 shadow-xl">
-              <div className="card-body">
-                <h2 className="card-title">Receive an offer</h2>
-                <p>You will get a service suite offering, including time and cost estimates, for each of your project's stages.</p>
-              </div>
-            </div>
-            <div className="card bg-base-100 shadow-xl">
-              <div className="card-body">
-                <h2 className="card-title">Sign the offer</h2>
-                <p>We start delivering the results while keeping you updated on the progress.</p>
-              </div>
-            </div>
-          </div> */}
-
-
-          <div class="w-full px-4">
-
-            <div class="max-w-3xl mx-auto text-left">
-              <div class="md:max-w-xl lg:-ml-20 my-8 md:h-40 card bg-base-100 shadow-xl">
-                <div className="card-body">
-                  <h2 className="card-title">Write to us or book a meeting</h2>
-                  <p>We will respond within two hours and arrange a meeting with you at your earliest convenience.</p>
-                </div>
-              </div>
-
-              <div class="md:max-w-xl mb-8 md:h-40 card bg-base-100 shadow-xl">
-                <div className="card-body">
-                  <h2 className="card-title">Meet with our representative</h2>
-                  <p>An expert matching your market niche and industry will get in touch to discuss your requests and determine the next steps.</p>
-                </div>
-              </div>
-
-              <div class="md:max-w-xl lg:ml-20 mb-8 md:h-40 card bg-base-100 shadow-xl">
-                <div className="card-body">
-                  <h2 className="card-title">Receive an offer</h2>
-                  <p>You will get a service suite offering, including time and cost estimates, for each of your project's stages.</p>
-                </div>
-              </div>
-
-              <div class="md:max-w-xl lg:ml-40 md:h-40 card bg-base-100 shadow-xl">
-                <div className="card-body">
-                  <h2 className="card-title">Sign the offer</h2>
-                  <p>We start delivering the results while keeping you updated on the progress.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-        </div>
-      </div>
+      <HowWeWork />
 
       <div className='container mx-auto'>
 
