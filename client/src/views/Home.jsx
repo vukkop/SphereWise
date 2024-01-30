@@ -10,8 +10,8 @@ export const Home = () => {
     <>
       <Hero />
       <div className='container mx-auto relative'>
-        <div className="absolute -top-10 left-20  w-[300px] h-[300px] bg-gradient-to-t from-purple-600 via-purple-900 to-transparent rounded-full filter blur-[150px] z-0"></div>
-        <div className="absolute top-0 sm:left-[200px] md:left-[300px] lg:left-[700px] xl:left-[920px] 2xl:left-[1120px] mt-40 xl:mt-10  w-[400px] h-[400px] bg-gradient-to-t from-blue-700 via-darkBlue-900 to-transparent rounded-full filter blur-[120px] z-1"></div>
+        <div className="absolute -top-10 left-20  w-[300px] h-[300px] bg-gradient-to-t from-blue-500 via-purple-900 to-transparent rounded-full filter blur-[150px] z-0"></div>
+        <div className="absolute top-0 sm:left-[200px] md:left-[300px] lg:left-[700px] xl:left-[920px] 2xl:left-[1120px] mt-40 xl:mt-10  w-[400px] h-[400px] bg-gradient-to-t from-blue-700 via-blue-950 to-transparent rounded-full filter blur-[120px] z-1"></div>
 
         <div className="row my-10 z-10">
           <h3 className="text-left text-4xl mb-5">What We Do</h3>
@@ -93,22 +93,18 @@ export const Home = () => {
 
         <div className="row my-10">
           <h3 className="text-left text-4xl mt-5 mb-5">Our Clients</h3>
-          <div className="grid grid-cols-5 gap-8">
+          <div className="grid grid-cols-4 gap-10 xl:gap-40 xl:px-10">
             <div>
               <img src={MRLogo} alt="M&R Solutions" />
               <h6 className='text-xl font-semibold mb-1'>M&R Solutions</h6>
             </div>
             <div>
+              <img src={PPLogo} alt="Gramina" />
+              <h6 className='text-xl font-semibold mb-1'>Gramina</h6>
+            </div>
+            <div>
               <img src={PPLogo} alt="Puppy Poodle" />
               <h6 className='text-xl font-semibold mb-1'>Puppy Poodle</h6>
-            </div>
-            <div>
-              <img src={PPLogo} alt="Gramina US" />
-              <h6 className='text-xl font-semibold mb-1'>Gramina US</h6>
-            </div>
-            <div>
-              <img src={PPLogo} alt="Gramina RS" />
-              <h6 className='text-xl font-semibold mb-1'>Gramina RS</h6>
             </div>
             <div className='flex flex-col justify-end'>
               <img src={LPLogo} alt="Ljuba Popovic" />
