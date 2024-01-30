@@ -9,9 +9,31 @@ export const Home = () => {
   return (
     <>
       <Hero />
-      <div className='container mx-auto'>
+      <div className='container mx-auto relative'>
+        <div className="absolute -top-10 left-20  w-[300px] h-[300px] bg-gradient-to-t from-purple-600 via-purple-900 to-transparent rounded-full filter blur-[150px] z-0"></div>
+        <div className="absolute top-0 sm:left-[200px] md:left-[300px] lg:left-[700px] xl:left-[920px] 2xl:left-[1120px] mt-40 xl:mt-10  w-[400px] h-[400px] bg-gradient-to-t from-blue-700 via-darkBlue-900 to-transparent rounded-full filter blur-[120px] z-1"></div>
 
-        <div className="row my-10">
+        <div className="row my-10 z-10">
+          <h3 className="text-left text-4xl mb-5">What We Do</h3>
+          <div className="grid grid-cols-2 gap-8">
+            <div className="card glass shadow-md">
+              <div className="card-body">
+                <h2 className="text-center text-3xl">Websites</h2>
+                <p className="text-left mt-5">Our websites aren't merely virtual storefronts; they're strategic assets meticulously designed to attract, engage, and convert visitors into loyal customers. With a keen focus on user experience and responsive design, we ensure that your online presence reflects the essence of your brand while driving tangible results. Furthermore, our custom software solutions are tailored to address the unique challenges faced by small businesses. From automating processes to enhancing productivity, our software solutions are crafted to be the catalysts that fuel growth and scalability.
+                </p>
+              </div>
+            </div>
+            <div className="card glass shadow-md">
+              <div className="card-body">
+                <h2 className="text-center text-3xl">Custom Software</h2>
+                <p className="text-left mt-5">At SphereWise Tech, we understand that the journey of a small business is dynamic and multifaceted. That's why our dedicated team collaborates closely with you, listening to your aspirations and challenges. By aligning our expertise with your vision, we forge solutions that not only meet your immediate needs but also lay the groundwork for sustainable success. Through our comprehensive suite of software solutions, we aim not just to meet expectations but to exceed them, empowering small businesses to thrive in a digitally-driven world.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="row my-10 z-15">
           <h3 className="text-left text-4xl mt-5 mb-5">Choosing Us</h3>
           <div className="grid grid-cols-2 gap-16 text-left">
             <div>
