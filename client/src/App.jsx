@@ -39,7 +39,7 @@ function App() {
           content="Transforming businesses with custom web development and software solutions. We specialize in creating tailored digital experiences for your unique needs."
         />
         <meta property="og:image" content="./assets/logo/Logo_light_background.png" />
-        <meta property="og:url" content="https://www.spherewise.ca/" />
+        <meta property="og:url" content="https://spherewise.ca/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SphereWise" />
 
@@ -60,7 +60,7 @@ function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         {/* Canonical URL */}
-        <link rel="canonical" href="https://www.spherewise.ca/" />
+        <link rel="canonical" href="https://spherewise.ca/" />
 
         {/* Robots Meta Tag */}
         <meta name="robots" content="index, follow" />
@@ -80,7 +80,6 @@ function App() {
         </div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/SphereWise" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
