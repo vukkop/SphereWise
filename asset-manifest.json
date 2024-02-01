@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/SphereWise/static/css/main.c4298e35.css",
-    "main.js": "/SphereWise/static/js/main.585c5317.js",
-    "static/js/787.d5fa4d18.chunk.js": "/SphereWise/static/js/787.d5fa4d18.chunk.js",
-    "static/media/E-Com.jpg": "/SphereWise/static/media/E-Com.5b356b6cabba96ef4080.jpg",
-    "static/media/Software.jpg": "/SphereWise/static/media/Software.5d99e2553396a172e586.jpg",
-    "static/media/idea.jpg": "/SphereWise/static/media/idea.a86a62360e198847e7d1.jpg",
-    "static/media/Team.jpg": "/SphereWise/static/media/Team.7e6cf83ace4420ed4673.jpg",
-    "static/media/Web.jpg": "/SphereWise/static/media/Web.b3b20e8037a53a36b458.jpg",
-    "static/media/Apps.jpg": "/SphereWise/static/media/Apps.4abf5d5e1b99547ed925.jpg",
-    "static/media/M&RSolutions.png": "/SphereWise/static/media/M&RSolutions.e1668f3baa7ad4c4b1cb.png",
-    "static/media/Story.jpg": "/SphereWise/static/media/Story.d74876d8ff9dce60fa8f.jpg",
-    "static/media/Ljuba_dark.png": "/SphereWise/static/media/Ljuba_dark.dda5df4887a506f976ed.png",
-    "static/media/Side_Logo.png": "/SphereWise/static/media/Side_Logo.b5e135ebdcb709af84ab.png",
-    "static/media/Side_Logo_full_dark_background.png": "/SphereWise/static/media/Side_Logo_full_dark_background.8023bcd5b8dd1f5873da.png",
-    "static/media/PuppyPoodle.svg": "/SphereWise/static/media/PuppyPoodle.ba445df320dc59804d01be363c6ca9fc.svg",
-    "index.html": "/SphereWise/index.html",
-    "main.c4298e35.css.map": "/SphereWise/static/css/main.c4298e35.css.map",
-    "main.585c5317.js.map": "/SphereWise/static/js/main.585c5317.js.map",
-    "787.d5fa4d18.chunk.js.map": "/SphereWise/static/js/787.d5fa4d18.chunk.js.map"
+    "main.css": "/static/css/main.c4298e35.css",
+    "main.js": "/static/js/main.0c376ae2.js",
+    "static/js/787.d5fa4d18.chunk.js": "/static/js/787.d5fa4d18.chunk.js",
+    "static/media/E-Com.jpg": "/static/media/E-Com.5b356b6cabba96ef4080.jpg",
+    "static/media/Software.jpg": "/static/media/Software.5d99e2553396a172e586.jpg",
+    "static/media/idea.jpg": "/static/media/idea.a86a62360e198847e7d1.jpg",
+    "static/media/Team.jpg": "/static/media/Team.7e6cf83ace4420ed4673.jpg",
+    "static/media/Web.jpg": "/static/media/Web.b3b20e8037a53a36b458.jpg",
+    "static/media/Apps.jpg": "/static/media/Apps.4abf5d5e1b99547ed925.jpg",
+    "static/media/M&RSolutions.png": "/static/media/M&RSolutions.e1668f3baa7ad4c4b1cb.png",
+    "static/media/Story.jpg": "/static/media/Story.d74876d8ff9dce60fa8f.jpg",
+    "static/media/Ljuba_dark.png": "/static/media/Ljuba_dark.dda5df4887a506f976ed.png",
+    "static/media/Side_Logo.png": "/static/media/Side_Logo.b5e135ebdcb709af84ab.png",
+    "static/media/Side_Logo_full_dark_background.png": "/static/media/Side_Logo_full_dark_background.8023bcd5b8dd1f5873da.png",
+    "static/media/PuppyPoodle.svg": "/static/media/PuppyPoodle.ba445df320dc59804d01be363c6ca9fc.svg",
+    "index.html": "/index.html",
+    "main.c4298e35.css.map": "/static/css/main.c4298e35.css.map",
+    "main.0c376ae2.js.map": "/static/js/main.0c376ae2.js.map",
+    "787.d5fa4d18.chunk.js.map": "/static/js/787.d5fa4d18.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c4298e35.css",
-    "static/js/main.585c5317.js"
+    "static/js/main.0c376ae2.js"
   ]
 }
