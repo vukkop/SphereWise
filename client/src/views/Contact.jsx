@@ -92,7 +92,7 @@ const Contact = () => {
         <div className="divider lg:divider-horizontal">OR</div>
 
 
-        <form className='grid flex-grow ms-5' ref={form} onSubmit={handleSubmit} noValidate action="">
+        <form className='grid flex-grow gap-4 ms-5' ref={form} onSubmit={handleSubmit} noValidate action="">
           <label className="form-control w-full max-w-xs">
             <div className="label">
               <span className="label-text">Name:</span>
