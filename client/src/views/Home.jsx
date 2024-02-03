@@ -4,6 +4,7 @@ import HowWeWork from '../components/home-components/HowWeWork'
 import MRLogo from '../assets/ourCients/M&RSolutions.png'
 import PPLogo from '../assets/ourCients/PuppyPoodle.svg'
 import LPLogo from '../assets/ourCients/Ljuba_dark.png'
+import GLogo from '../assets/ourCients/GraminaLogo.png'
 
 export const Home = () => {
   return (
@@ -98,17 +99,17 @@ export const Home = () => {
               <img src={MRLogo} alt="M&R Solutions" />
               <h6 className='text-xl font-semibold mb-1'>M&R Solutions</h6>
             </div>
-            <div>
-              <img src={PPLogo} alt="Gramina" />
-              <h6 className='text-xl font-semibold mb-1'>Gramina</h6>
+            <div className='flex flex-col justify-end'>
+              <img src={GLogo} alt="Gramina" />
+              <h6 className='text-xl font-semibold mb-1 mt-[30%]'>Gramina</h6>
+            </div>
+            <div className='flex flex-col justify-end'>
+              <img src={LPLogo} alt="Ljuba Popovic" />
+              <h6 className='text-xl font-semibold mb-1'>Ljuba Popovic Photography</h6>
             </div>
             <div>
               <img src={PPLogo} alt="Puppy Poodle" />
               <h6 className='text-xl font-semibold mb-1'>Puppy Poodle</h6>
-            </div>
-            <div className='flex flex-col justify-end'>
-              <img src={LPLogo} alt="Ljuba Popovic" />
-              <h6 className='text-xl font-semibold mb-1 mt-3'>Ljuba Popovic Photography</h6>
             </div>
           </div>
         </div>
