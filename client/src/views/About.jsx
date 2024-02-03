@@ -13,7 +13,7 @@ export const About = () => {
         <div className='flex flex-col justify-center'>
           <h2 className="text-2xl font-bold mb-4">Our Story</h2>
           <p className="text-gray-500">
-            SphereWise Tech was founded with a vision to [briefly describe the founding principles and goals of your company]. Since our establishment, we have been dedicated to [briefly mention your core values or mission]. Through passion, innovation, and a commitment to excellence, we have evolved into a trusted partner for businesses seeking cutting-edge digital solutions.
+            SphereWise Tech was founded with a vision to empower businesses of all sizes through innovative and tailored website and software solutions. The company's core principles include inclusivity, client-centricity, and a commitment to excellence. Their goal is to champion the growth of businesses, regardless of size, by providing strategic assets in the form of websites and custom software. Through a focus on innovation, adaptability, and quality, SphereWise Tech aims to transform small ventures into impactful enterprises, one innovative solution at a time. Through passion, innovation, and a commitment to excellence, we have evolved into a trusted partner for businesses seeking cutting-edge digital solutions.
           </p>
         </div>
         <img className='rounded-xl' src={StoryImg} alt="Our Story" />
