@@ -7,8 +7,6 @@ const NavBar = () => {
     <div className='container mx-auto'>
       <div className="navbar bg-base-100">
         <div className="navbar-start">
-
-
           <Link to={"/"}>
             <img src={Logo} alt="SphereWise Technology Logo" className='max-h-[55px]' />
           </Link>
@@ -39,7 +37,6 @@ const NavBar = () => {
         </div>
       </div>
     </div >
-
   )
 }
 
