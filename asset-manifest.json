@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a46823ec.css",
-    "main.js": "/static/js/main.f00641b8.js",
+    "main.css": "/static/css/main.3cdb3af4.css",
+    "main.js": "/static/js/main.dc24242b.js",
     "static/js/787.d5fa4d18.chunk.js": "/static/js/787.d5fa4d18.chunk.js",
     "static/media/E-Com.jpg": "/static/media/E-Com.5b356b6cabba96ef4080.jpg",
     "static/media/Software.jpg": "/static/media/Software.5d99e2553396a172e586.jpg",
@@ -17,12 +17,12 @@
     "static/media/Side_Logo_full_dark_background.png": "/static/media/Side_Logo_full_dark_background.8023bcd5b8dd1f5873da.png",
     "static/media/PuppyPoodle.svg": "/static/media/PuppyPoodle.ba445df320dc59804d01be363c6ca9fc.svg",
     "index.html": "/index.html",
-    "main.a46823ec.css.map": "/static/css/main.a46823ec.css.map",
-    "main.f00641b8.js.map": "/static/js/main.f00641b8.js.map",
+    "main.3cdb3af4.css.map": "/static/css/main.3cdb3af4.css.map",
+    "main.dc24242b.js.map": "/static/js/main.dc24242b.js.map",
     "787.d5fa4d18.chunk.js.map": "/static/js/787.d5fa4d18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a46823ec.css",
-    "static/js/main.f00641b8.js"
+    "static/css/main.3cdb3af4.css",
+    "static/js/main.dc24242b.js"
   ]
 }
