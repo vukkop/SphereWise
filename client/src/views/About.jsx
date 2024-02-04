@@ -9,7 +9,7 @@ export const About = () => {
       <h1 className="text-4xl font-bold">About Us</h1>
 
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-10">
         <div className='flex flex-col justify-center'>
           <h2 className="text-2xl font-bold mb-4">Our Story</h2>
           <p className="text-gray-500">
@@ -19,7 +19,7 @@ export const About = () => {
         <img className='rounded-xl' src={StoryImg} alt="Our Story" />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+      <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-8 mb-8">
         <img className='rounded-xl' src={TeamImg} alt="Our Team" />
         <div className='flex flex-col justify-center'>
           <h2 className="text-2xl font-bold mb-4">Our Team</h2>
