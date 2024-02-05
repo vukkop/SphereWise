@@ -62,7 +62,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <form className='grid flex-grow gap-4 ms-5' ref={form} onSubmit={handleSubmit} noValidate action="">
+      <form className='grid flex-grow gap-4 ms-5 me-5' ref={form} onSubmit={handleSubmit} noValidate action="">
         <label className="form-control w-full max-w-xs">
           <div className="label">
             <span className="label-text">Name:</span>
@@ -85,7 +85,7 @@ const ContactForm = () => {
           <div className="label">
             <span className="label-text">Phone number:</span>
           </div>
-          <input type="text" name='phoneNumber' onChange={onChangeHandler} value={contactForm.phoneNumber} placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+          <input type="text" name='phoneNumber' onChange={onChangeHandler} value={contactForm.phoneNumber} placeholder="Type here" className="input input-bordered " />
           {/* <div className="label">
           <span className="label-text-alt">Bottom Left label</span>
         </div> */}
@@ -94,7 +94,7 @@ const ContactForm = () => {
           <div className="label">
             <span className="label-text">Message:</span>
           </div>
-          <textarea name='message' onChange={onChangeHandler} value={contactForm.message} className="textarea textarea-bordered h-24 w-[80%] mb-4" placeholder="Message"></textarea>
+          <textarea name='message' onChange={onChangeHandler} value={contactForm.message} className="textarea textarea-bordered h-36 w-full max-w-md mb-4" placeholder="Message"></textarea>
           {/* <div className="label">
             <span className="label-text-alt">Your bio</span>
           </div> */}
