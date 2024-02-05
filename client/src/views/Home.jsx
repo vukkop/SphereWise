@@ -10,13 +10,13 @@ export const Home = () => {
   return (
     <>
       <Hero />
-      <div className='container mx-auto relative'>
-        <div className="absolute -top-10 left-20  w-[300px] h-[300px] bg-gradient-to-t from-blue-500 via-purple-900 to-transparent rounded-full filter blur-[150px] z-0"></div>
-        <div className="absolute top-0 sm:left-[200px] md:left-[300px] lg:left-[700px] xl:left-[920px] 2xl:left-[1120px] mt-40 xl:mt-10  w-[400px] h-[400px] bg-gradient-to-t from-blue-700 via-blue-950 to-transparent rounded-full filter blur-[120px] z-1"></div>
+      <div className='container mx-auto relative overflow-hidden'>
+        <div className="absolute top-0 md:-top-10 left-20  w-[300px] h-[300px] bg-gradient-to-t from-blue-500 via-purple-900 to-transparent rounded-full filter blur-[150px] z-0"></div>
+        <div className="absolute top-60 sm:top-16 left-20 sm:left-[200px] md:left-[300px] lg:left-[700px] xl:left-[920px] 2xl:left-[1120px] mt-40 xl:mt-10  w-[400px] h-[400px] bg-gradient-to-t from-blue-700 via-blue-950 to-transparent rounded-full filter blur-[120px] z-1"></div>
 
         <div className="row my-10 z-10">
           <h3 className="text-left text-4xl mb-5">What We Do</h3>
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-5">
             <div className="card glass shadow-md">
               <div className="card-body">
                 <h2 className="text-center text-3xl">Websites</h2>
@@ -36,7 +36,7 @@ export const Home = () => {
 
         <div className="row my-10 z-15">
           <h3 className="text-left text-4xl mt-5 mb-5">Choosing Us</h3>
-          <div className="grid grid-cols-2 gap-16 text-left">
+          <div className="grid grid-cols-2 gap-8 sm:gap-12 md:gap-16 text-left px-2">
             <div>
               <div className='rounded-xl mb-1 px-4 py-2 w-fit bg-gradient-to-br from-sky-400 via-blue-600 to-transparent '>
                 <span className='font-bold text-xl'>1</span>
@@ -94,7 +94,7 @@ export const Home = () => {
 
         <div className="row my-10">
           <h3 className="text-left text-4xl mt-5 mb-5">Our Clients</h3>
-          <div className="grid grid-cols-4 gap-10 xl:gap-40 xl:px-10">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-10 xl:gap-40 px-12 xl:px-10">
             <div>
               <img src={MRLogo} alt="M&R Solutions" />
               <h6 className='text-xl font-semibold mb-1'>M&R Solutions</h6>
