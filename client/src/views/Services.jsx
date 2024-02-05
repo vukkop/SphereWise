@@ -29,14 +29,13 @@ const Services = () => {
     // Add more services as needed
   ];
 
-
   return (
     <div className='container mx-auto'>
 
       <div className="min-h-[80vh] p-8">
         <h1 className="text-4xl font-bold mb-8">Our Services</h1>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 2xl:px-40">
           {services.map((service, index) => (
             <div key={index} className="card card-compact bg-base-100 shadow-xl">
               <figure className='overflow-hidden max-h-[250px]'><img src={service.img} alt="Shoes" /></figure>
