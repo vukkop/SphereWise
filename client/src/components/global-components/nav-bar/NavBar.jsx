@@ -21,7 +21,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to={"/contact"} className="btn btn-info btn-sm md:btn-md mr-3 lg:mr-0"><i className="fa-solid fa-phone"></i> Contact Us </Link>
+          <Link to={"/contact"} className="btn btn-info btn-sm md:btn-md lg:mr-3"><i className="fa-solid fa-phone"></i><span className='hidden md:flex'>Contact Us</span></Link>
 
           <label className="swap swap-rotate ml-4">
             {/* this hidden checkbox controls the state */}
