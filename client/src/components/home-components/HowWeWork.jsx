@@ -25,11 +25,11 @@ const HowWeWork = () => {
 
         <div className="w-full px-4 flex flex-wrap">
           <div className="w-1/5">
-            <ul className="steps steps-vertical mt-4">
+            <ul className="steps steps-vertical mt-20 xs:mt-10 sm:mt-4">
               {[0, 1, 2, 3].map((index) => (
                 <li
                   key={index}
-                  className={`step ${hoveredIndex >= index & hoveredIndex !== null ? 'step-info' : ''} ${index === 0 && 'my-[65px]'}`}
+                  className={`step ${hoveredIndex >= index & hoveredIndex !== null ? 'step-info' : ''} ${index === 0 && 'my-[95px] xs:my-[80px] sm:my-[63px]'}`}
                 ></li>
               ))}
             </ul>

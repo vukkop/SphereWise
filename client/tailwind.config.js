@@ -1,8 +1,12 @@
+import { screens as _screens } from "tailwindcss/defaultTheme";
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{html,js,jsx}"],
-  theme: {
-    extend: {},
+export const content = ["./src/**/*.{html,js,jsx}"];
+export const theme = {
+  screens: {
+    xs: { min: "430px", max: "639px" },
+    ..._screens,
   },
-  plugins: [require("daisyui")],
+  extend: {},
 };
+export const plugins = [require("daisyui")];
