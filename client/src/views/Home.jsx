@@ -1,18 +1,21 @@
 import React from 'react'
 import Hero from '../components/home-components/Hero'
 import HowWeWork from '../components/home-components/HowWeWork'
-import MRLogo from '../assets/ourCients/M&RSolutions.png'
-import PPLogo from '../assets/ourCients/PuppyPoodle.svg'
-import LPLogo from '../assets/ourCients/Ljuba_dark.png'
-import GLogo from '../assets/ourCients/GraminaLogo.png'
+import ChoosingUs from '../components/home-components/ChoosingUs'
+import OurClients from '../components/home-components/OurClients'
 
-export const Home = () => {
+export const Home = ({ isLight }) => {
   return (
     <>
       <Hero />
+
       <div className='container mx-auto relative'>
-        <div className="absolute top-0 md:-top-10 left-5  w-[300px] h-[300px] bg-gradient-to-t from-blue-500 via-purple-900 to-transparent rounded-full filter blur-[150px] z-0"></div>
-        <div className="absolute top-72 sm:top-16 left-5 sm:left-[200px] md:left-[300px] lg:left-[700px] xl:left-[920px] 2xl:left-[1120px] mt-40 lg:mt-0 w-[300px] h-[300px]  sm:w-[400px] sm:h-[400px] bg-gradient-to-t from-blue-700 via-blue-950 to-transparent rounded-full filter blur-[120px] z-1"></div>
+        {!isLight &&
+          <>
+            <div className="absolute top-0 md:-top-10 left-5  w-[300px] h-[300px] bg-gradient-to-t from-blue-500 via-purple-900 to-transparent rounded-full filter blur-[150px] z-0"></div>
+            <div className="absolute top-72 sm:top-16 left-5 sm:left-[200px] md:left-[300px] lg:left-[700px] xl:left-[920px] 2xl:left-[1120px] mt-40 lg:mt-0 w-[300px] h-[300px]  sm:w-[400px] sm:h-[400px] bg-gradient-to-t from-blue-700 via-blue-950 to-transparent rounded-full filter blur-[120px] z-1"></div>
+          </>
+        }
 
         <div className="row my-10 z-10">
           <h3 className="text-left text-4xl mb-5">What We Do</h3>
@@ -34,57 +37,11 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className="row my-10 z-15">
-          <h3 className="text-left text-4xl mt-5 mb-5">Choosing Us</h3>
-          <div className="grid grid-cols-2 gap-8 sm:gap-12 md:gap-16 text-left px-2">
-            <div>
-              <div className='rounded-xl mb-1 px-4 py-2 w-fit bg-gradient-to-br from-sky-400 via-blue-600 to-transparent '>
-                <span className='font-bold text-xl'>1</span>
-              </div>
-              <h4 className='text-xl font-semibold mb-1'>Certified experts</h4>
-              <p>Certified business and tech development experts who ensure a business-focused approach.</p>
-            </div>
-            <div>
-              <div className='rounded-xl mb-1 px-4 py-2 w-fit bg-gradient-to-br from-sky-400 via-blue-600 to-transparent '>
-                <span className='font-bold text-xl'>2</span>
-              </div>
-              <h4 className='text-xl font-semibold mb-1'>Quick implementation</h4>
-              <p>Velocity doubled by quality is what our Agile approach boils down to.</p>
-            </div>
-            <div>
-              <div className='rounded-xl mb-1 px-4 py-2 w-fit bg-gradient-to-br from-sky-400 via-blue-600 to-transparent '>
-                <span className='font-bold text-xl'>3</span>
-              </div>
-              <h4 className='text-xl font-semibold mb-1'>Technology Agnostic</h4>
-              <p>Providing a tech stack wide and expansive enough to erase any limits of flexibility during each and every project.</p>
-            </div>
-            <div>
-              <div className='rounded-xl mb-1 px-4 py-2 w-fit bg-gradient-to-br from-sky-400 via-blue-600 to-transparent '>
-                <span className='font-bold text-xl'>4</span>
-              </div>
-              <h4 className='text-xl font-semibold mb-1'>Flexibility</h4>
-              <p>We can integrate your product with any required platform so that it moves your business forward.</p>
-            </div>
-            <div>
-              <div className='rounded-xl mb-1 px-4 py-2 w-fit bg-gradient-to-br from-sky-400 via-blue-600 to-transparent '>
-                <span className='font-bold text-xl'>5</span>
-              </div>
-              <h4 className='text-xl font-semibold mb-1'>Compliance</h4>
-              <p>Regardless of the industry, we build software that does not react to, but prevents cyber security and legal issues.</p>
-            </div>
-            <div>
-              <div className='rounded-xl mb-1 px-4 py-2 w-fit bg-gradient-to-br from-sky-400 via-blue-600 to-transparent '>
-                <span className='font-bold text-xl'>6</span>
-              </div>
-              <h4 className='text-xl font-semibold mb-1'>Adaptability</h4>
-              <p>Avenga builds products with codes, adapting to the client's requirements, not vice versa.</p>
-            </div>
-          </div>
-        </div>
+        <ChoosingUs></ChoosingUs>
 
       </div>
 
-      <HowWeWork />
+      <HowWeWork isLight={isLight}></HowWeWork>
 
       <div className='container mx-auto'>
 
@@ -92,27 +49,7 @@ export const Home = () => {
         <h3 className="text-left text-4xl mt-5">Our Team</h3>
       </div> */}
 
-        <div className="row my-10">
-          <h3 className="text-left text-4xl mt-5 mb-5">Our Clients</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-10 xl:gap-40 px-12 xl:px-10">
-            <div>
-              <img src={MRLogo} alt="M&R Solutions" />
-              <h6 className='text-xl font-semibold mb-1'>M&R Solutions</h6>
-            </div>
-            <div className='flex flex-col justify-end'>
-              <img src={GLogo} alt="Gramina" />
-              <h6 className='text-xl font-semibold mb-1 mt-[30%]'>Gramina</h6>
-            </div>
-            <div className='flex flex-col justify-end'>
-              <img src={LPLogo} alt="Ljuba Popovic" />
-              <h6 className='text-xl font-semibold mb-1'>Ljuba Popovic Photography</h6>
-            </div>
-            <div>
-              <img src={PPLogo} alt="Puppy Poodle" />
-              <h6 className='text-xl font-semibold mb-1'>Puppy Poodle</h6>
-            </div>
-          </div>
-        </div>
+        <OurClients></OurClients>
 
         <div className="row my-10">
           <h3 className="text-left text-4xl mt-5">Technologies</h3>

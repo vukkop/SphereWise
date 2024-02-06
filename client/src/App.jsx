@@ -41,7 +41,7 @@ function App() {
           <NavBar isLight={isLight} onUpdate={updateTheme}></NavBar>
         </div>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home isLight={isLight} />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
