@@ -38,7 +38,7 @@ export const Home = ({ isLight }) => {
         </div>
       </div>
 
-      <ChoosingUs></ChoosingUs>
+      <ChoosingUs isLight={isLight}></ChoosingUs>
 
 
       <HowWeWork isLight={isLight}></HowWeWork>
