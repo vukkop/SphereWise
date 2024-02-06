@@ -49,7 +49,7 @@ export const Home = ({ isLight }) => {
         <h3 className="text-left text-4xl mt-5">Our Team</h3>
       </div> */}
 
-        <OurClients></OurClients>
+        <OurClients isLight={isLight}></OurClients>
 
         <div className="row my-10">
           <h3 className="text-left text-4xl mt-5">Technologies</h3>
