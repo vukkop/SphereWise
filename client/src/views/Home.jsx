@@ -9,15 +9,15 @@ export const Home = ({ isLight }) => {
     <>
       <Hero />
 
-      <div className='container mx-auto relative'>
-        {!isLight &&
-          <>
-            <div className="absolute top-0 md:-top-10 left-5  w-[300px] h-[300px] bg-gradient-to-t from-blue-500 via-purple-900 to-transparent rounded-full filter blur-[150px] z-0"></div>
-            <div className="absolute top-72 sm:top-16 left-5 sm:left-[200px] md:left-[300px] lg:left-[700px] xl:left-[920px] 2xl:left-[1120px] mt-40 lg:mt-0 w-[300px] h-[300px]  sm:w-[400px] sm:h-[400px] bg-gradient-to-t from-blue-700 via-blue-950 to-transparent rounded-full filter blur-[120px] z-1"></div>
-          </>
-        }
+      <div className={`row z-10 ${isLight && 'bg-sky-400 py-10'}`}>
+        <div className='container mx-auto relative'>
+          {!isLight &&
+            <>
+              <div className="absolute top-0 md:-top-10 left-5  w-[300px] h-[300px] bg-gradient-to-t from-blue-500 via-purple-900 to-transparent rounded-full filter blur-[150px] z-0"></div>
+              <div className="absolute top-72 sm:top-16 left-5 sm:left-[200px] md:left-[300px] lg:left-[700px] xl:left-[920px] 2xl:left-[1120px] mt-40 lg:mt-0 w-[300px] h-[300px]  sm:w-[400px] sm:h-[400px] bg-gradient-to-t from-blue-700 via-blue-950 to-transparent rounded-full filter blur-[120px] z-1"></div>
+            </>
+          }
 
-        <div className="row my-10 z-10">
           <h3 className="text-left text-4xl mb-5">What We Do</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-5">
             <div className="card glass shadow-md">
@@ -36,10 +36,10 @@ export const Home = ({ isLight }) => {
             </div>
           </div>
         </div>
-
-        <ChoosingUs></ChoosingUs>
-
       </div>
+
+      <ChoosingUs></ChoosingUs>
+
 
       <HowWeWork isLight={isLight}></HowWeWork>
 

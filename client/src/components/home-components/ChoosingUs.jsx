@@ -2,7 +2,7 @@ import React from 'react'
 
 const ChoosingUs = () => {
   return (
-    <div className="row my-10 z-15">
+    <div className="row container mx-auto my-10 z-15">
       <h3 className="text-left text-4xl mt-5 mb-5">Choosing Us</h3>
       <div className="grid grid-cols-2 gap-8 sm:gap-12 md:gap-16 text-left px-2">
         <div>
