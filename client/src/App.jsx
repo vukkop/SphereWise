@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useState, useEffect } from 'react'
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/global-components/nav-bar/NavBar";
 import Footer from "./components/global-components/footer/Footer";
@@ -10,6 +11,29 @@ import { Helmet } from "react-helmet";
 
 
 function App() {
+  // TO DO: Clean this
+  const [isLight, setIsLight] = useState(
+    JSON.parse(localStorage.getItem('isLight'))
+  );
+  useEffect(() => {
+    localStorage.setItem('isLight', JSON.stringify(isLight));
+    if (isLight) {
+      localStorage.theme = 'light'
+    } else {
+      localStorage.theme = 'dark'
+    }
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark')
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light')
+    }
+  }, [isLight]);
+
+  const updateTheme = () => {
+    setIsLight(!isLight)
+  }
+
+
   return (
     <>
       <Helmet>
@@ -74,9 +98,10 @@ function App() {
         {/* Additional Custom Meta Tags */}
         {/* Add any additional meta tags that are relevant to your content and SEO strategy */}
       </Helmet>
-      <div className="App">
+
+      <div className="App relative overflow-x-clip">
         <div>
-          <NavBar></NavBar>
+          <NavBar isLight={isLight} onUpdate={updateTheme}></NavBar>
         </div>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -85,7 +110,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-      <Footer></Footer>
+      <Footer isLight={isLight}></Footer>
     </>
   );
 }

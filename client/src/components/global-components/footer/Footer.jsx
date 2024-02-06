@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Logo from '../../../assets/logo/Side_Logo_full_dark_background.png'
 import { Link } from 'react-router-dom'
 
-const Footer = () => {
+const Footer = ({ isLight }) => {
+
+  useEffect(() => {
+  }, [isLight]);
+
   return (
     <>
-      <footer className="footer px-8 pt-8 pb-2 bg-base-200 text-base-content">
+      <footer className={`footer px-8 pt-8 pb-2 bg-base-200 text-base-content ${isLight && 'bg-slate-800 text-slate-300'}`}>
         <aside className='hidden md:inline-flex'>
           <img src={Logo} width='100%' />
         </aside>
@@ -31,7 +35,7 @@ const Footer = () => {
           <img src={Logo} width='100%' />
         </aside>
       </footer>
-      <footer className="footer flex justify-between items-center px-8 py-2 bg-base-200" style={{ rowGap: "0.5rem" }}>
+      <footer className={`footer flex justify-between items-center px-8 py-2 bg-base-200 ${isLight && 'bg-slate-800'}`} style={{ rowGap: "0.5rem" }}>
         <aside className="items-center">
           <p >SphereWise Tech<br />1310 Richards Street, Vanvouver, BC, Canada</p>
         </aside>
@@ -43,9 +47,8 @@ const Footer = () => {
           </div>
         </nav>
       </footer>
-
-      <div className="bg-base-300 py-3">
-        <p className='text-center'>© 2024 SphereWise Tech. All rights reserved.</p>
+      <div className={`bg-base-300 py-3 ${isLight && 'bg-slate-900'}`}>
+        <p className='text-center text-white'>© 2024 SphereWise Tech. All rights reserved.</p>
       </div>
     </>
   )
