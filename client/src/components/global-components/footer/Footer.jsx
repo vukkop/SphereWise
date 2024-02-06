@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import Logo from '../../../assets/logo/Side_Logo_full_dark_background.png'
 import { Link } from 'react-router-dom'
 
