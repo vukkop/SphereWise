@@ -6,7 +6,7 @@ const Hero = () => {
     <div className='container mx-auto'>
       <div className="hero min-h-screen">
         <div className="hero-content flex-col-reverse lg:flex-row-reverse">
-          <div className='relative h-[70vh] w-full rounded-br-2xl rounded-bl-2xl lg:rounded-tr-2xl lg:rounded-br-2xl overflow-hidden border-none -mt-7'>
+          <div className='relative h-[70vh] w-full rounded-br-2xl rounded-bl-2xl lg:rounded-tr-2xl lg:rounded-br-2xl lg:rounded-bl-none overflow-hidden border-none -mt-7'>
             <img src={Idea} className="absolute insert-0 h-full w-full object-cover filter grayscale contrast-200" />
             <div className='absolute insert-0 h-full w-full bg-gradient-to-b lg:bg-gradient-to-r from-base-100  to-transparent'></div>
           </div>

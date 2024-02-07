@@ -40,7 +40,6 @@ export const Home = ({ isLight }) => {
 
       <ChoosingUs isLight={isLight}></ChoosingUs>
 
-
       <HowWeWork isLight={isLight}></HowWeWork>
 
       <div className='container mx-auto'>
