@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.883a675b.css",
-    "main.js": "/static/js/main.9f24f27f.js",
+    "main.css": "/static/css/main.42eccc08.css",
+    "main.js": "/static/js/main.07e46b99.js",
     "static/js/787.d5fa4d18.chunk.js": "/static/js/787.d5fa4d18.chunk.js",
     "static/media/E-Com.jpg": "/static/media/E-Com.5b356b6cabba96ef4080.jpg",
     "static/media/Software.jpg": "/static/media/Software.5d99e2553396a172e586.jpg",
@@ -14,15 +14,16 @@
     "static/media/Story.jpg": "/static/media/Story.d74876d8ff9dce60fa8f.jpg",
     "static/media/Ljuba_dark.png": "/static/media/Ljuba_dark.dda5df4887a506f976ed.png",
     "static/media/Side_Logo.png": "/static/media/Side_Logo.b5e135ebdcb709af84ab.png",
+    "static/media/PuppyPoodle_light.png": "/static/media/PuppyPoodle_light.31ec3fb04e7559640c5b.png",
     "static/media/Side_Logo_full_dark_background.png": "/static/media/Side_Logo_full_dark_background.8023bcd5b8dd1f5873da.png",
     "static/media/PuppyPoodle.svg": "/static/media/PuppyPoodle.ba445df320dc59804d01be363c6ca9fc.svg",
     "index.html": "/index.html",
-    "main.883a675b.css.map": "/static/css/main.883a675b.css.map",
-    "main.9f24f27f.js.map": "/static/js/main.9f24f27f.js.map",
+    "main.42eccc08.css.map": "/static/css/main.42eccc08.css.map",
+    "main.07e46b99.js.map": "/static/js/main.07e46b99.js.map",
     "787.d5fa4d18.chunk.js.map": "/static/js/787.d5fa4d18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.883a675b.css",
-    "static/js/main.9f24f27f.js"
+    "static/css/main.42eccc08.css",
+    "static/js/main.07e46b99.js"
   ]
 }
