@@ -3,6 +3,7 @@ import Hero from '../components/home-components/Hero'
 import HowWeWork from '../components/home-components/HowWeWork'
 import ChoosingUs from '../components/home-components/ChoosingUs'
 import OurClients from '../components/home-components/OurClients'
+import FrequentlyAskedQuestions from '../components/home-components/FrequentlyAskedQuestions'
 
 export const Home = ({ isLight }) => {
   return (
@@ -50,17 +51,15 @@ export const Home = ({ isLight }) => {
 
         <OurClients isLight={isLight}></OurClients>
 
-        <div className="row my-10">
+        {/* <div className="row my-10">
           <h3 className="text-left text-4xl mt-5">Technologies</h3>
-        </div>
+        </div> */}
 
-        <div className="row my-10">
+        {/* <div className="row my-10">
           <h3 className="text-left text-4xl mt-5">Reviews</h3>
-        </div>
+        </div> */}
 
-        <div className="row my-10">
-          <h3 className="text-left text-4xl mt-5">Frequently Asked Questions</h3>
-        </div>
+        <FrequentlyAskedQuestions></FrequentlyAskedQuestions>
 
       </div>
     </>
