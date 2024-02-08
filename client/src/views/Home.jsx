@@ -4,6 +4,7 @@ import HowWeWork from '../components/home-components/HowWeWork'
 import ChoosingUs from '../components/home-components/ChoosingUs'
 import OurClients from '../components/home-components/OurClients'
 import FrequentlyAskedQuestions from '../components/home-components/FrequentlyAskedQuestions'
+import Reviews from '../components/home-components/Reviews'
 
 export const Home = ({ isLight }) => {
   return (
@@ -55,9 +56,7 @@ export const Home = ({ isLight }) => {
           <h3 className="text-left text-4xl mt-5">Technologies</h3>
         </div> */}
 
-        {/* <div className="row my-10">
-          <h3 className="text-left text-4xl mt-5">Reviews</h3>
-        </div> */}
+        <Reviews></Reviews>
 
         <FrequentlyAskedQuestions></FrequentlyAskedQuestions>
 
