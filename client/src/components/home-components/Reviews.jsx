@@ -37,14 +37,16 @@ const Reviews = () => {
             <div className='flex justify-center items-center w-full'>
               <div className="card w-96 bg-base-100 shadow-xl">
                 <div className="card-body text-center">
+
                   <blockquote>
-                    <p class="text-2xl font-semibold text-gray-900 dark:text-white">"{reviews.review}"</p>
+                    <p class="text-2xl font-semibold">"{reviews.review}"</p>
                   </blockquote>
+
                   <figcaption class="flex justify-center items-center mt-6 space-x-3 rtl:space-x-reverse">
                     <img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="profile picture" />
                     <div class="flex items-center justify-center divide-x-2 rtl:divide-x-reverse divide-gray-300 dark:divide-gray-700">
-                      <cite class="pe-3 font-medium text-gray-900 dark:text-white">{reviews.name}</cite>
-                      <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">Google Reviews</cite>
+                      <cite class="pe-3 font-medium ">{reviews.name}</cite>
+                      <cite class="ps-3 text-sm ">Google Reviews</cite>
                     </div>
                   </figcaption>
 
@@ -61,6 +63,7 @@ const Reviews = () => {
                     <input type="radio" name="rating-10" className="bg-orange-400 mask mask-star-2 mask-half-1" />
                     <input type="radio" name="rating-10" className="bg-orange-400 mask mask-star-2 mask-half-2" checked />
                   </div>
+
                 </div>
               </div>
             </div>
@@ -72,11 +75,7 @@ const Reviews = () => {
           </div>
         ))}
 
-
       </div>
-
-
-
     </div >
   )
 }
