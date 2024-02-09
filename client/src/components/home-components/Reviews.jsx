@@ -39,7 +39,7 @@ const Reviews = () => {
                 <div className="card-body text-center">
 
                   <blockquote>
-                    <p class="text-2xl font-semibold">"{reviews.review}"</p>
+                    <h3 class="text-2xl font-semibold">"{reviews.review}"</h3>
                   </blockquote>
 
                   <figcaption class="flex justify-center items-center mt-6 space-x-3 rtl:space-x-reverse">
