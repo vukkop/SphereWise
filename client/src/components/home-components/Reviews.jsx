@@ -1,8 +1,8 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 
 const Reviews = () => {
   const carouselRef = useRef(null);
-
+  const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
   const reviews = [
     {
       review: 'Review 1.',
@@ -26,30 +26,48 @@ const Reviews = () => {
     },
   ]
 
-  const handleAnchorClick = (event, i) => {
-    event.preventDefault();
 
-    const slide = carouselRef.current.querySelector(`#slide${i}`);
+  // useEffect(() => {
+  //   const changeReviewAutomatically = () => {
+  //     if (currentReviewIndex >= reviews.length - 1) {
+  //       setCurrentReviewIndex(0)
+  //     } else {
+  //       setCurrentReviewIndex((prevIndex) => (prevIndex + 1));
+  //     }
+  //     scrollToReview(currentReviewIndex)
+  //   }
+  //   const intervalId = setInterval(changeReviewAutomatically, 3500);
+
+  //   return () => clearInterval(intervalId);
+  // }, [currentReviewIndex]);
+
+  const handleArrowClick = (event, i) => {
+    event.preventDefault();
+    setCurrentReviewIndex(i)
+    scrollToReview(i)
+  };
+
+  // Preventing Y-axis scroll
+  const scrollToReview = (index) => {
+    const slide = carouselRef.current.querySelector(`#slide${index}`);
     if (slide) {
-      // Scroll to the element smoothly
       slide.scrollIntoView({
-        behavior: 'smooth',
         inline: 'nearest',
         block: 'nearest'
       });
     }
-  };
+  }
 
   return (
     <div className="row my-10">
       <h3 className="text-left text-4xl my-7">Reviews</h3>
 
 
-      <div className="carousel w-full" ref={carouselRef}>
+      <div className="carousel w-full" ref={carouselRef} >
 
         {reviews.map((reviews, i) => (
-          <div key={i} id={`slide${i}`} className="carousel-item relative w-full">
-            <div className='flex justify-center items-center w-full'>
+          <div key={i} id={`slide${i}`} className={`carousel-item relative w-full`}>
+            <div className="flex justify-center items-center w-full">
               <div className="card w-96 bg-base-100 shadow-xl">
                 <div className="card-body text-center">
 
@@ -84,8 +102,8 @@ const Reviews = () => {
             </div>
 
             <div className="absolute hidden sm:flex justify-between transform -translate-y-1/2 left-5 right-5 md:left-20 md:right-20 lg:left-40 lg:right-40 xl:left-60 xl:right-60 2xl:left-80 2xl:right-80 top-1/2">
-              <a className="btn btn-circle" onClick={(e) => handleAnchorClick(e, i - 1)}>❮</a>
-              <a className="btn btn-circle" onClick={(e) => handleAnchorClick(e, i + 1)}>❯</a>
+              <a className="btn btn-circle" onClick={(e) => handleArrowClick(e, i - 1)}>❮</a>
+              <a className="btn btn-circle" onClick={(e) => handleArrowClick(e, i + 1)}>❯</a>
             </div>
           </div>
         ))}
