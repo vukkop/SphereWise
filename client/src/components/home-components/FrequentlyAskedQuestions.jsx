@@ -35,6 +35,9 @@ const FrequentlyAskedQuestions = () => {
           </div>
         </div>
       ))}
+      <div className="my-5 text-center">
+        <p>Still have any questions? <a className='text-sky-600 font-semibold hover:underline hover:text-sky-500' href="/contact">Contact us</a> </p>
+      </div>
 
     </div>
   )
