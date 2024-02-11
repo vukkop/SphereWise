@@ -4,20 +4,20 @@ import { Link } from 'react-router-dom'
 const FrequentlyAskedQuestions = () => {
   const faq = [
     {
-      question: 'Question 1?',
-      answer: 'Answer 1.'
+      question: 'What services does SphereWise Tech offer?',
+      answer: 'SphereWise Tech specializes in providing tailored website and software solutions for businesses of all sizes. Our services include strategic website design, custom software development, and innovative technology solutions to catalyze growth.'
     },
     {
-      question: 'Question 2?',
-      answer: 'Answer 2.'
+      question: 'How does SphereWise Tech approach small businesses?',
+      answer: 'We believe in championing the growth of businesses, regardless of size. Our bespoke solutions are not confined by scale; they are crafted to elevate small businesses to new heights. From startups to local enterprises, our commitment remains steadfast in delivering intuitive websites and custom software that empower and catalyze growth.'
     },
     {
-      question: 'Question 3?',
-      answer: 'Answer 3.'
+      question: 'What makes SphereWise Tech different?',
+      answer: 'SphereWise Tech stands out for its certified experts, quick implementation with an Agile approach, technology agnosticism providing flexibility, adaptability to client requirements, and a strong emphasis on compliance to prevent cybersecurity and legal issues. Our focus is on quality, innovation, and client satisfaction.'
     },
     {
-      question: 'Question 4?',
-      answer: 'Answer 4.'
+      question: 'How does SphereWise Tech work with clients?',
+      answer: 'We combine the industry\'s best service delivery standards with unprecedented solution personalization practices. Clients can contact us via email or book a meeting, and we respond within two hours. Our expert representatives, matching your market niche and industry, will discuss your requests and provide a service suite offering, including time and cost estimates for each project stage.'
     },
   ]
 
