@@ -2,6 +2,11 @@ import React from 'react'
 import ContactForm from '../components/contact-components/ContactForm';
 
 const Contact = () => {
+  const contactInfo = {
+    email: 'spherewisetech@gmail.com',
+    phone: '+1 234 456 4567',
+    address: '1310 Richards Street, Vanvouver, BC, Canada',
+  }
 
 
   return (
@@ -13,15 +18,15 @@ const Contact = () => {
           <div>
             <div className='mt-5 mb-7'>
               <h4 className="text-3xl mb-1">Email:</h4>
-              <a href="mailto:spherewisetech@gmail.com" className="text-xl underline">Click here to email us</a>
+              <a href={`mailto:${contactInfo.email}`} className="text-xl underline">Click here to email us</a>
             </div>
             <div className='mt-5 mb-7'>
               <h4 className="text-3xl mb-1">Phone:</h4>
-              <a className="text-xl underline" href="tel:+">+1 234 456 4567</a>
+              <a className="text-xl underline" href="tel:+">{contactInfo.phone}</a>
             </div>
             <div className='mt-5 mb-7'>
               <h4 className="text-3xl mb-1">Address:</h4>
-              <a className="text-xl underline" href='#'>1310 Richards Street, Vanvouver, BC, Canada</a>
+              <a className="text-xl underline" href='#'>{contactInfo.address}</a>
             </div>
             <div className='mt-5 mb-7 flex justify-center'>
               {/* TO DO:
