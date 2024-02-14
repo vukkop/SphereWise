@@ -5,24 +5,24 @@ const Reviews = () => {
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
   const reviews = [
     {
-      review: 'Review 1.',
-      name: 'Name 1',
-      raiting: 10,
+      review: 'Amazing service! SphereWise Tech delivered beyond my expectations. The tailored solutions perfectly addressed our business needs.',
+      name: 'John Doe',
+      rating: 10,
     },
     {
-      review: 'Review 2.',
-      name: 'Name 2',
-      raiting: 10,
+      review: 'Incredible expertise! The team\'s commitment to quality and innovation is evident in every project.Highly recommend SphereWise Tech.',
+      name: 'Jane Smith',
+      rating: 10,
     },
     {
-      review: 'Review 3.',
-      name: 'Name 3',
-      raiting: 10,
+      review: 'Exceptional results! SphereWise Tech\'s adaptability and attention to detail make them a valuable partner.Our business has seen significant growth.',
+      name: 'Alex Johnson',
+      rating: 10,
     },
     {
-      review: 'Review 4.',
-      name: 'Name 4',
-      raiting: 10,
+      review: 'Outstanding collaboration! SphereWise Tech\'s certified experts provided a seamless experience.Their focus on compliance and technology agnosticism sets them apart.',
+      name: 'Emily Brown',
+      rating: 10,
     },
   ]
 
