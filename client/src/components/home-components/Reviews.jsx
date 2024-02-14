@@ -10,17 +10,17 @@ const Reviews = () => {
       rating: 10,
     },
     {
-      review: 'Incredible expertise! The team\'s commitment to quality and innovation is evident in every project.Highly recommend SphereWise Tech.',
+      review: 'Incredible expertise! The team\'s commitment to quality and innovation is evident in every project. Highly recommend SphereWise Tech.',
       name: 'Jane Smith',
       rating: 10,
     },
     {
-      review: 'Exceptional results! SphereWise Tech\'s adaptability and attention to detail make them a valuable partner.Our business has seen significant growth.',
+      review: 'Exceptional results! SphereWise Tech\'s adaptability and attention to detail make them a valuable partner. Our business has seen significant growth.',
       name: 'Alex Johnson',
       rating: 10,
     },
     {
-      review: 'Outstanding collaboration! SphereWise Tech\'s certified experts provided a seamless experience.Their focus on compliance and technology agnosticism sets them apart.',
+      review: 'Outstanding collaboration! SphereWise Tech\'s certified experts provided a seamless experience. Their focus on compliance and technology agnosticism sets them apart.',
       name: 'Emily Brown',
       rating: 10,
     },
