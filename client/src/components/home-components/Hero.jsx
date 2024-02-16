@@ -1,5 +1,6 @@
 import React from 'react'
 import Idea from '../../assets/images/idea.jpg'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -18,7 +19,7 @@ const Hero = () => {
               </h2>
             </div>
             <div className="justify-center mt-10">
-              <button className="btn btn-outline btn-info">Find Out More</button>
+              <Link to={"/contact"} className="btn btn-outline btn-info">Get Started <i class="fa-solid fa-angle-right"></i></Link>
             </div>
           </div>
         </div>

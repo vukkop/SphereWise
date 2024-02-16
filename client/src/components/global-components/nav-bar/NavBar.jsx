@@ -25,7 +25,7 @@ const NavBar = ({ isLight, onUpdate }) => {
           </ul>
         </div>
         <div className="navbar-end flex items-center">
-          <Link to={"/contact"} className="btn btn-info btn-sm md:btn-md lg:mr-3"><i className="fa-solid fa-phone"></i><span className='hidden md:flex'>Contact Us</span></Link>
+          <a href='tel:+17785126117' className="btn btn-info btn-sm md:btn-md lg:mr-3"><i className="fa-solid fa-phone"></i><span className='hidden md:flex'>Call Us</span></a>
 
           <label className="swap swap-rotate ml-4">
             {/* this hidden checkbox controls the state */}

@@ -4,7 +4,7 @@ import ContactForm from '../components/contact-components/ContactForm';
 const Contact = () => {
   const contactInfo = {
     email: 'spherewisetech@gmail.com',
-    phone: '+1 234 456 4567',
+    phone: '+1 778 512 6117',
     address: '1310 Richards Street, Vanvouver, BC, Canada',
   }
 
@@ -22,7 +22,7 @@ const Contact = () => {
             </div>
             <div className='mt-5 mb-7'>
               <h4 className="text-3xl mb-1">Phone:</h4>
-              <a className="text-xl underline" href="tel:+">{contactInfo.phone}</a>
+              <a className="text-xl underline" href="tel:+17785126117">{contactInfo.phone}</a>
             </div>
             <div className='mt-5 mb-7'>
               <h4 className="text-3xl mb-1">Address:</h4>
