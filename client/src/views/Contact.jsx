@@ -3,7 +3,7 @@ import ContactForm from '../components/contact-components/ContactForm';
 
 const Contact = () => {
   const contactInfo = {
-    email: 'spherewisetech@gmail.com',
+    email: 'info@spherewise.ca',
     phone: '+1 778 512 6117',
     address: '1310 Richards Street, Vanvouver, BC, Canada',
   }
@@ -18,7 +18,7 @@ const Contact = () => {
           <div>
             <div className='mt-5 mb-7'>
               <h4 className="text-3xl mb-1">Email:</h4>
-              <a href={`mailto:${contactInfo.email}`} className="text-xl underline">Click here to email us</a>
+              <a href={`mailto:${contactInfo.email}`} className="text-xl underline">{contactInfo.email}</a>
             </div>
             <div className='mt-5 mb-7'>
               <h4 className="text-3xl mb-1">Phone:</h4>

@@ -76,7 +76,7 @@ const ContactForm = () => {
           <div className="label">
             <span className="label-text">Email:</span>
           </div>
-          <input type="email" name='email' onChange={onChangeHandler} value={contactForm.email} placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+          <input type="email" name='email' onChange={onChangeHandler} value={contactForm.email} placeholder="ex: example@email.com" className="input input-bordered w-full max-w-xs" />
           {/* <div className="label">
           <span className="label-text-alt">Bottom Left label</span>
         </div> */}
@@ -85,7 +85,7 @@ const ContactForm = () => {
           <div className="label">
             <span className="label-text">Phone number:</span>
           </div>
-          <input type="text" name='phoneNumber' onChange={onChangeHandler} value={contactForm.phoneNumber} placeholder="Type here" className="input input-bordered " />
+          <input type="text" name='phoneNumber' onChange={onChangeHandler} value={contactForm.phoneNumber} placeholder="ex: +1 123 123 1234" className="input input-bordered " />
           {/* <div className="label">
           <span className="label-text-alt">Bottom Left label</span>
         </div> */}
@@ -94,7 +94,7 @@ const ContactForm = () => {
           <div className="label">
             <span className="label-text">Message:</span>
           </div>
-          <textarea name='message' onChange={onChangeHandler} value={contactForm.message} className="textarea textarea-bordered h-36 w-full max-w-md mb-4" placeholder="Message"></textarea>
+          <textarea name='message' onChange={onChangeHandler} value={contactForm.message} className="textarea textarea-bordered h-36 w-full max-w-md mb-4" placeholder="Please write your message here"></textarea>
           {/* <div className="label">
             <span className="label-text-alt">Your bio</span>
           </div> */}
