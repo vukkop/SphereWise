@@ -8,13 +8,13 @@ const SeoHelmet = () => {
       <title>SphereWise - Your Web & Software Solutions Partner</title>
       <meta
         name="description"
-        content="Transforming businesses with custom web development and software solutions. We specialize in creating tailored digital experiences for your unique needs."
+        content="Looking for web development in Vancouver? SphereWise Tech crafts tailored solutions, transforming businesses with custom web development and software solutions. Contact us for innovative website and software development services."
       />
 
       {/* Keywords */}
       <meta
         name="keywords"
-        content="website development, custom software, web design, business solutions, Vancouver"
+        content="website, software, website development, custom software, web design, business solutions, Vancouver web development services, Top web developers in Vancouver, Vancouver"
       />
 
       {/* Author */}
@@ -27,7 +27,7 @@ const SeoHelmet = () => {
       />
       <meta
         property="og:description"
-        content="Transforming businesses with custom web development and software solutions. We specialize in creating tailored digital experiences for your unique needs."
+        content="SphereWise Tech crafts tailored solutions, transforming businesses with custom web development and software solutions. Contact us for innovative website and software development services."
       />
       <meta property="og:image" content="./assets/logo/Logo_light_background.png" />
       <meta property="og:url" content="https://spherewise.ca/" />
@@ -42,7 +42,7 @@ const SeoHelmet = () => {
       />
       <meta
         name="twitter:description"
-        content="Transforming businesses with custom web development and software solutions. We specialize in creating tailored digital experiences for your unique needs."
+        content="SphereWise Tech crafts tailored solutions, transforming businesses with custom web development and software solutions. Contact us for innovative website and software development services."
       />
       <meta name="twitter:image" content="../assets/logo/Logo_light_background.png" />
       {/* <meta name="twitter:creator" content="@yourtwitterhandle" /> */}
