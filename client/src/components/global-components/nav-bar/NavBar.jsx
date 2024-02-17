@@ -21,6 +21,7 @@ const NavBar = ({ isLight, onUpdate }) => {
             <li ><Link className='focus:!text-slate-500' to={"/"}>Home</Link></li>
             <li><Link className='focus:!text-slate-500' to={"/services"}>Services</Link></li>
             <li><Link className='focus:!text-slate-500' to={"/about"}>About</Link></li>
+            <li><Link className='focus:!text-slate-500' to={"/blog"}>Blog</Link></li>
             <li><Link className='focus:!text-slate-500' to={"/contact"}>Contact</Link></li>
           </ul>
         </div>
@@ -46,6 +47,7 @@ const NavBar = ({ isLight, onUpdate }) => {
               <li><Link to={"/"}>Home</Link></li>
               <li><Link to={"/services"}>Services</Link></li>
               <li><Link to={"/about"}>About</Link></li>
+              <li><Link to={"/blog"}>Blog</Link></li>
               <li><Link to={"/contact"}>Contact</Link></li>
             </ul>
           </div>

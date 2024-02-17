@@ -8,6 +8,7 @@ import About from "./views/About";
 import Services from "./views/Services";
 import Contact from "./views/Contact";
 import SeoHelmet from './components/global-components/seo/SeoHelmet';
+import Blog from './views/Blog';
 
 function App() {
   // TO DO: Clean this
@@ -44,6 +45,7 @@ function App() {
           <Route path="/" element={<Home isLight={isLight} />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
