@@ -76,8 +76,8 @@ const Blog = () => {
 
       <h1 className="text-4xl font-bold mb-8">Our Blog</h1>
 
-      <div className="flex gap-4">
-        <div className="flex-1 text-start px-4">
+      <div className="flex flex-wrap gap-4">
+        <div className="flex-auto sm:flex-1 text-start px-4">
           <a className="w-full" href="#">
             <img className="rounded-xl object-cover w-full h-80 mb-4" src={posts[0].img} alt="Blog post image" />
             <span className="text-gray-500">{posts[0].date}</span>
@@ -85,12 +85,12 @@ const Blog = () => {
             <p className="max-w-xl text-lg text-gray-500">{posts[0].article}</p>
           </a>
         </div>
-        <div className="flex-1 flex flex-col gap-4 text-start px-4">
+        <div className="flex-auto sm:flex-1 flex flex-col gap-6 text-start px-4">
           {posts.slice(1, 4).map((post, i) => (
             <a key={i} className="md:flex group" href="#">
               <img className="rounded-xl object-cover w-48 h-40" src={post.img} alt="Blog post image" />
-              <div className="mt-4 md:mt-0 md:ml-6 pt-2">
-                <span className="block text-gray-500 mb-2">{post.date}</span>
+              <div className=" md:mt-0 md:ml-6 pt-2">
+                <span className="block text-gray-500 mb-1">{post.date}</span>
                 <h4 className="text-xl font-semibold">{post.heading}</h4>
               </div>
             </a>
@@ -105,11 +105,12 @@ const Blog = () => {
       }
       {displayMore &&
         <>
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 xl:px-20 mt-10 text-start">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 xl:px-20 mt-10 text-start">
             {posts.slice(4, posts.length).map((post, i) => (
-              <a key={i} className="flex flex-col items-center px-6" href="#">
-                <img className="rounded-xl object-cover w-full h-40" src={post.img} alt="Blog post image" />
+              <a key={i} className="flex flex-col items-start sm:items-center px-6" href="#">
+                <img className="rounded-xl object-cover w-48 sm:w-full h-40" src={post.img} alt="Blog post image" />
                 <div className="mt-2">
+
                   <span className="block text-gray-500 mb-2">{post.date}</span>
                   <h4 className="text-xl font-semibold">{post.heading}</h4>
                 </div>
