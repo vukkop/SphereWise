@@ -27,7 +27,7 @@ const FrequentlyAskedQuestions = () => {
 
       {faq.map((faq, i) => (
         <div key={i} className="collapse bg-base-200 collapse-arrow my-4">
-          <input type="checkbox" />
+          <input name={i} type="checkbox" />
           <div className="collapse-title text-xl font-medium">
             {faq.question}
           </div>

@@ -30,7 +30,7 @@ const NavBar = ({ isLight, onUpdate }) => {
 
           <label className="swap swap-rotate ml-4">
             {/* this hidden checkbox controls the state */}
-            <input type="checkbox" className="theme-controller" value={'light'} checked={isLight}
+            <input name='theme' type="checkbox" className="theme-controller" value={'light'} checked={isLight}
               onChange={handleThemeChange}
             />
             {/* moon icon */}
