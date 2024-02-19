@@ -5,6 +5,7 @@ import ChoosingUs from '../components/home-components/ChoosingUs'
 import OurClients from '../components/home-components/OurClients'
 import FrequentlyAskedQuestions from '../components/home-components/FrequentlyAskedQuestions'
 import Reviews from '../components/home-components/Reviews'
+import NewestBlogPosts from '../components/home-components/NewestBlogPosts'
 
 export const Home = ({ isLight }) => {
   return (
@@ -49,6 +50,8 @@ export const Home = ({ isLight }) => {
         {/* <div className="row my-10">
         <h3 className="text-left text-4xl mt-5">Our Team</h3>
       </div> */}
+
+        <NewestBlogPosts></NewestBlogPosts>
 
         <OurClients isLight={isLight}></OurClients>
 
