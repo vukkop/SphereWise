@@ -9,6 +9,7 @@ import Services from "./views/Services";
 import Contact from "./views/Contact";
 import SeoHelmet from './components/global-components/seo/SeoHelmet';
 import Blog from './views/Blog';
+import SingleBlogPost from './components/blog-components/SingleBlogPost';
 
 function App() {
   // TO DO: Clean this
@@ -46,6 +47,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:i" element={<SingleBlogPost />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
