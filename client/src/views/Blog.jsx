@@ -20,7 +20,7 @@ const Blog = () => {
             <img className="rounded-xl object-cover w-full h-80 mb-4" src={posts[0].img} alt="Blog post" />
             <span className="text-gray-500">{posts[0].date}</span>
             <h4 className="text-3xl font-semibold my-4">{posts[0].heading}</h4>
-            <p className="max-w-xl text-lg text-gray-500">{posts[0].article}</p>
+            <p className="max-w-xl text-lg text-gray-500">{posts[0].shortAarticle}</p>
           </Link>
         </div>
         <div className="flex-auto sm:flex-1 flex flex-col gap-6 text-start px-4">
