@@ -1,4 +1,13 @@
-import AppImg from "../../assets/images/services/Apps.jpg";
+import Img1 from "../../assets/images/blog/businessPotential.JPEG2000";
+import Img2 from "../../assets/images/blog/ux.JPEG2000";
+import Img3 from "../../assets/images/blog/distinct.JPEG2000";
+import Img4 from "../../assets/images/blog/future.JPEG2000";
+import Img5 from "../../assets/images/blog/streamline.JPEG2000";
+import Img6 from "../../assets/images/blog/smallBusiness.JPEG2000";
+import Img7 from "../../assets/images/blog/innovation.JPEG2000";
+import Img8 from "../../assets/images/blog/navigating.JPEG2000";
+import Img9 from "../../assets/images/blog/agile.JPEG2000";
+import Img10 from "../../assets/images/blog/security.JPEG2000";
 
 // Latest to the top ^
 export const posts = [
@@ -37,7 +46,7 @@ export const posts = [
         text: "In a world where digital threats are ever-present, trust in software is non-negotiable. SphereWise Tech stands at the forefront, ensuring that our clients can navigate the digital landscape with confidence, knowing that their software is fortified against cybersecurity threats and compliant with industry regulations. Trust is not just built; it is meticulously crafted, and at SphereWise Tech, we craft it into every line of code we write.",
       },
     ],
-    img: AppImg,
+    img: Img10,
   },
 
   {
@@ -71,7 +80,7 @@ export const posts = [
         text: "Agile Velocity stands as a testament to the transformative power of Agile methodologies in modern software development. By doubling speed without compromising quality, fostering adaptability, and embracing technological flexibility, Agile Velocity is redefining how businesses approach and achieve their development goals. In a landscape where time-to-market and product quality are paramount, Agile Velocity emerges as a guiding force, offering a path to not just keep up with the pace of change but to lead the way with innovation and excellence. As businesses continue to navigate the challenges of the digital era, Agile Velocity remains a beacon of efficiency, ensuring that development teams can deliver exceptional results, faster and more reliably than ever before.",
       },
     ],
-    img: AppImg,
+    img: Img9,
   },
 
   {
@@ -113,7 +122,7 @@ export const posts = [
         text: "In conclusion, navigating the dynamic landscape of custom software demands a strategic mindset, adaptability, and a collaborative partnership between developers and clients. By embracing the principles of adaptability, scalability, and security, businesses can leverage custom software as a powerful tool to not only meet current needs but also to thrive in an ever-changing business environment.",
       },
     ],
-    img: AppImg,
+    img: Img8,
   },
 
   {
@@ -143,7 +152,7 @@ export const posts = [
         text: "Innovation in web development is not just a technical endeavor; it's a strategic journey that redefines possibilities. SphereWise Tech is committed to leading this journey, crafting solutions that not only meet the current demands of the digital landscape but also anticipate and embrace the future. Through user-centric experiences, Agile methodologies, and a commitment to scalability, we empower businesses to thrive in an ever-evolving digital world.\n\nChoose SphereWise Tech for web development that goes beyond the ordinary—where innovation is not just a concept but a strategic imperative, shaping the future of digital possibilities.",
       },
     ],
-    img: AppImg,
+    img: Img7,
   },
 
   {
@@ -185,7 +194,7 @@ export const posts = [
         text: "In conclusion, SphereWise Tech is dedicated to transforming small ventures into impactful enterprises, one innovative solution at a time. Our commitment to empowering small businesses is not just a service offering—it's a mission. We believe in the potential of every small business and strive to provide the tools and solutions needed to navigate the digital landscape, achieve growth, and redefine success.",
       },
     ],
-    img: AppImg,
+    img: Img6,
   },
 
   {
@@ -227,7 +236,7 @@ export const posts = [
         text: "Maximizing efficiency through streamlined processes is a strategic imperative for organizations aiming to thrive in a competitive landscape. From operational agility and enhanced productivity to cost optimization and customer satisfaction, the benefits are far-reaching. As businesses embark on the journey of process optimization, they unlock the power to reshape their future, driving sustainable success and staying ahead in an ever-evolving business ecosystem.",
       },
     ],
-    img: AppImg,
+    img: Img5,
   },
 
   {
@@ -281,7 +290,7 @@ export const posts = [
         text: "In conclusion, the future of technology is a tapestry woven with innovation, connectivity, and ethical considerations. As these trends continue to unfold, they hold the potential to reshape industries, redefine human experiences, and contribute to the global progress of society. Embracing these technological shifts with a mindful approach will be key to navigating the intricate landscapes of the digital future.",
       },
     ],
-    img: AppImg,
+    img: Img4,
   },
 
   {
@@ -335,7 +344,7 @@ export const posts = [
         text: "In conclusion, a strategic web presence is an ongoing commitment to optimizing every aspect of your brand's online representation. By combining user-centric design, compelling content, and strategic digital marketing efforts, you can create an impactful online presence that resonates with your audience and positions your brand for sustained success in the digital landscape.",
       },
     ],
-    img: AppImg,
+    img: Img3,
   },
 
   {
@@ -389,7 +398,7 @@ export const posts = [
         text: "In conclusion, mastering user experience is an ongoing commitment to user-centric design and continuous improvement. By prioritizing intuitive navigation, responsive design, engaging content, and accessibility, you create a website that not only meets user expectations but exceeds them. A positive user experience not only boosts satisfaction but also contributes to the long-term success and credibility of your online presence.",
       },
     ],
-    img: AppImg,
+    img: Img2,
   },
 
   {
@@ -432,6 +441,6 @@ export const posts = [
         text: "In conclusion, unlocking business potential in the digital age requires a strategic embrace of innovative software solutions. From enhancing web presence to implementing custom software, businesses that prioritize adaptability, efficiency, and a forward-looking approach position themselves to thrive and redefine success in a dynamic and competitive landscape.",
       },
     ],
-    img: AppImg,
+    img: Img1,
   },
 ];
