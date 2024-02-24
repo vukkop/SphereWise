@@ -15,7 +15,7 @@ const NewestBlogPosts = () => {
           <Link to={"/blog"} className='text-sky-600 font-semibold hover:underline hover:text-sky-500 mt-4'>See all articles <i className="fa-solid fa-arrow-right text-xs"></i></Link>
         </div>
         {posts.slice(0, 2).map((post, i) => (
-          <a key={i} className="col-span-7 sm:col-span-3 md:col-span-2 flex flex-col items-start sm:items-center px-6" href="#">
+          <Link key={i} to={`/blog/${i}`} className="col-span-7 sm:col-span-3 md:col-span-2 flex flex-col items-start sm:items-center px-6">
             <img className="rounded-xl object-cover w-48 sm:w-full h-40" src={post.img} alt="Blog post" />
             <div className="mt-2">
 
@@ -23,7 +23,7 @@ const NewestBlogPosts = () => {
               <h4 className="text-xl font-semibold">{post.heading}</h4>
               {/* <p className='mt-4'>{post.article}</p> */}
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </>
