@@ -1,6 +1,6 @@
 import React from 'react'
-import StoryImg from '../assets/images/about/Story.jpg'
-import TeamImg from '../assets/images/about/Team.jpg'
+import StoryImg from '../assets/images/about/Story.JPEG2000'
+import TeamImg from '../assets/images/about/Team.JPEG2000'
 
 export const About = () => {
   return (

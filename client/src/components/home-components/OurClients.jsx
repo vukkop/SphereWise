@@ -1,9 +1,9 @@
 import React from 'react'
-import MRLogo from '../../assets/ourCients/M&RSolutions.png'
+import MRLogo from '../../assets/ourCients/M&RSolutions.JPEG2000'
 import PPLogo from '../../assets/ourCients/PuppyPoodle.svg'
-import PPLogoLight from '../../assets/ourCients/PuppyPoodle_light.png'
-import LPLogo from '../../assets/ourCients/Ljuba_dark.png'
-import GLogo from '../../assets/ourCients/GraminaLogo.png'
+import PPLogoLight from '../../assets/ourCients/PuppyPoodle_light.JPEG2000'
+import LPLogo from '../../assets/ourCients/Ljuba_dark.JPEG2000'
+import GLogo from '../../assets/ourCients/GraminaLogo.JPEG2000'
 
 const OurClients = ({ isLight }) => {
   return (

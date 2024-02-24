@@ -1,5 +1,5 @@
 import React from 'react'
-import Idea from '../../assets/images/idea.jpg'
+import Idea from '../../assets/images/idea.JPEG2000'
 import { Link } from 'react-router-dom'
 
 const Hero = () => {

@@ -1,8 +1,8 @@
 import React from 'react'
-import WebImg from '../assets/images/services/Web.jpg'
-import AppImg from '../assets/images/services/Apps.jpg'
-import SoftwareImg from '../assets/images/services/Software.jpg'
-import EComImg from '../assets/images/services/E-Com.jpg'
+import WebImg from '../assets/images/services/Web.JPEG2000'
+import AppImg from '../assets/images/services/Apps.JPEG2000'
+import SoftwareImg from '../assets/images/services/Software.JPEG2000'
+import EComImg from '../assets/images/services/E-Com.JPEG2000'
 
 const Services = () => {
   const services = [
