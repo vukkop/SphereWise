@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Logo from '../../../assets/logo/Side_Logo_full_dark_background.png'
+import Logo from '../../../assets/logo/Side_Logo_full_dark_background.JPEG2000'
 import { Link } from 'react-router-dom'
 
 const Footer = ({ isLight }) => {

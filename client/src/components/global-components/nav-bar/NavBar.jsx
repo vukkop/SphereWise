@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../../assets/logo/Side_Logo.png'
+import Logo from '../../../assets/logo/Side_Logo.JPEG2000'
 import { Link } from 'react-router-dom'
 
 const NavBar = ({ isLight, onUpdate }) => {
