@@ -1,15 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.4ef4e556.css",
-    "main.js": "/static/js/main.9b295ef5.js",
+    "main.js": "/static/js/main.3903556c.js",
     "static/js/787.d5fa4d18.chunk.js": "/static/js/787.d5fa4d18.chunk.js",
+    "static/media/businessPotential.JPEG2000": "/static/media/businessPotential.f0d602ab9a472ad06793.JPEG2000",
+    "static/media/navigating.JPEG2000": "/static/media/navigating.d8eb01c57f0cd3b68a5f.JPEG2000",
+    "static/media/smallBusiness.JPEG2000": "/static/media/smallBusiness.4835ffd52888abfb8cfd.JPEG2000",
     "static/media/E-Com.jpg": "/static/media/E-Com.5b356b6cabba96ef4080.jpg",
     "static/media/Software.jpg": "/static/media/Software.5d99e2553396a172e586.jpg",
     "static/media/idea.jpg": "/static/media/idea.a86a62360e198847e7d1.jpg",
+    "static/media/ux.JPEG2000": "/static/media/ux.2b9c3774a39d84a05b5f.JPEG2000",
+    "static/media/innovation.JPEG2000": "/static/media/innovation.1a94159aca7fd8e551ea.JPEG2000",
     "static/media/Team.jpg": "/static/media/Team.7e6cf83ace4420ed4673.jpg",
+    "static/media/distinct.JPEG2000": "/static/media/distinct.810b6444441e26072fe3.JPEG2000",
+    "static/media/future.JPEG2000": "/static/media/future.6957f140474c19104d9c.JPEG2000",
+    "static/media/agile.JPEG2000": "/static/media/agile.a33c73a6251b0b42b8c7.JPEG2000",
+    "static/media/security.JPEG2000": "/static/media/security.77ec21f5068a40f3f5ac.JPEG2000",
     "static/media/Web.jpg": "/static/media/Web.b3b20e8037a53a36b458.jpg",
     "static/media/Apps.jpg": "/static/media/Apps.4abf5d5e1b99547ed925.jpg",
     "static/media/GraminaLogo.png": "/static/media/GraminaLogo.ebf59e167562d6da9459.png",
+    "static/media/streamline.JPEG2000": "/static/media/streamline.8d26edcece0b58000ec4.JPEG2000",
     "static/media/M&RSolutions.png": "/static/media/M&RSolutions.e1668f3baa7ad4c4b1cb.png",
     "static/media/Story.jpg": "/static/media/Story.d74876d8ff9dce60fa8f.jpg",
     "static/media/Ljuba_dark.png": "/static/media/Ljuba_dark.dda5df4887a506f976ed.png",
@@ -19,11 +29,11 @@
     "static/media/PuppyPoodle.svg": "/static/media/PuppyPoodle.ba445df320dc59804d01be363c6ca9fc.svg",
     "index.html": "/index.html",
     "main.4ef4e556.css.map": "/static/css/main.4ef4e556.css.map",
-    "main.9b295ef5.js.map": "/static/js/main.9b295ef5.js.map",
+    "main.3903556c.js.map": "/static/js/main.3903556c.js.map",
     "787.d5fa4d18.chunk.js.map": "/static/js/787.d5fa4d18.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4ef4e556.css",
-    "static/js/main.9b295ef5.js"
+    "static/js/main.3903556c.js"
   ]
 }
