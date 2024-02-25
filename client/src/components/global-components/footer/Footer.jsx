@@ -11,7 +11,7 @@ const Footer = ({ isLight }) => {
     <>
       <footer className={`footer px-8 pt-8 pb-2 bg-base-200 text-base-content ${isLight && 'bg-slate-800 text-slate-300'}`}>
         <aside className='hidden md:inline-flex'>
-          <img src={Logo} width='100%' />
+          <img src={Logo} alt='SphereWise Technology Logo' width='100%' />
         </aside>
         <nav>
           <h6 className="footer-title">Services</h6>
@@ -32,7 +32,7 @@ const Footer = ({ isLight }) => {
           <a className="link link-hover">Cookie policy</a>
         </nav>
         <aside className='md:hidden place-self-center'>
-          <img src={Logo} width='100%' />
+          <img src={Logo} alt='SphereWise Technology Logo' width='100%' />
         </aside>
       </footer>
       <footer className={`footer flex justify-between items-center px-8 py-2 bg-base-200 ${isLight && 'bg-slate-800 text-slate-300'}`} style={{ rowGap: "0.5rem" }}>

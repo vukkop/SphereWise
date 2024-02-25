@@ -16,7 +16,7 @@ const NewestBlogPosts = () => {
         </div>
         {posts.slice(0, 2).map((post, i) => (
           <Link key={i} to={`/blog/${i}`} className="col-span-7 sm:col-span-3 md:col-span-2 flex flex-col items-start sm:items-center px-6">
-            <img className="rounded-xl object-cover w-48 sm:w-full h-40" src={post.img} alt="Blog post" />
+            <img alt="Blog post" className="rounded-xl object-cover w-48 sm:w-full h-40" src={post.img} />
             <div className="mt-2">
 
               <span className="block text-gray-500 mb-2">{post.date}</span>
