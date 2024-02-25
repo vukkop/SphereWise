@@ -8,7 +8,7 @@ const SeoHelmet = () => {
       <title>SphereWise - Your Web & Software Solutions Partner</title>
       <meta
         name="description"
-        content="Looking for web development in Vancouver? SphereWise Tech crafts tailored solutions, transforming businesses with custom web development and software solutions. Contact us for innovative website and software development services."
+        content="Looking for web development in Vancouver? SphereWise Tech crafts tailored solutions, transforming businesses with custom web development and software solutions. Contact us for website and software development services."
       />
 
       {/* Keywords */}
