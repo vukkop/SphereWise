@@ -38,7 +38,7 @@ const Services = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 2xl:px-40">
           {services.map((service, index) => (
             <div key={index} className="card card-compact bg-base-100 shadow-xl">
-              <figure className='overflow-hidden max-h-[250px]'><img src={service.img} alt="Shoes" /></figure>
+              <figure className='overflow-hidden max-h-[250px]'><img src={service.img} alt={service.title} /></figure>
               <div className="card-body">
                 <h2 className="text-2xl font-bold mb-4">{service.title}</h2>
                 <p className="text-gray-500">{service.description}</p>
