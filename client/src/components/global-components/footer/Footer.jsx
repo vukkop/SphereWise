@@ -9,7 +9,7 @@ const Footer = ({ isLight }) => {
 
   return (
     <>
-      <footer className={`footer px-8 pt-8 pb-2 bg-base-200 text-base-content ${isLight && 'bg-slate-800 text-slate-300'}`}>
+      <footer className={`footer px-8 pt-8 bg-base-200 text-base-content ${isLight && 'bg-slate-800 text-slate-300'}`}>
         <aside className='hidden md:inline-flex'>
           <img src={Logo} alt='SphereWise Technology Logo' width='100%' />
         </aside>
@@ -18,18 +18,19 @@ const Footer = ({ isLight }) => {
           <Link to={"/services"} className="link link-hover">Websites</Link>
           <Link to={"/services"} className="link link-hover">Apps</Link>
           <Link to={"/services"} className="link link-hover">Custom Software</Link>
+          <Link to={"/services"} className="link link-hover">E-commerce</Link>
         </nav>
         <nav>
           <h6 className="footer-title">Company</h6>
-          <Link to={"/about"} className="link link-hover">About us</Link>
-          <Link to={"/contact"} className="link link-hover">Contact</Link>
+          <Link to={"/about"} className="link link-hover">About Us</Link>
           <Link to={"/about"} className="link link-hover">Our Story</Link>
+          <Link to={"/contact"} className="link link-hover">Contact</Link>
         </nav>
         <nav>
           <h6 className="footer-title">Legal</h6>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
+          <Link to={"/legal/termsofuse"} className="link link-hover disabled">Terms of use</Link>
+          <Link to={"/legal/privacypolicy"} className="link link-hover">Privacy policy</Link>
+          <Link to={"/legal/cookiepolicy"} className="link link-hover">Cookie policy</Link>
         </nav>
         <aside className='md:hidden place-self-center'>
           <img src={Logo} alt='SphereWise Technology Logo' width='100%' />

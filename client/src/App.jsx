@@ -10,6 +10,9 @@ import Contact from "./views/Contact";
 import SeoHelmet from './components/global-components/seo/SeoHelmet';
 import Blog from './views/Blog';
 import SingleBlogPost from './components/blog-components/SingleBlogPost';
+import TermsOfUse from './components/legal-components/TermsOfUse';
+import PrivacyPolicy from './components/legal-components/PrivacyPolicy';
+import CookiePolicy from './components/legal-components/CookiePolicy';
 
 function App() {
   // TO DO: Clean this
@@ -49,6 +52,9 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:i" element={<SingleBlogPost />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/legal/termsofuse" element={<TermsOfUse />} />
+          <Route path="/legal/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/legal/cookiepolicy" element={<CookiePolicy />} />
         </Routes>
       </div>
       <Footer isLight={isLight}></Footer>
