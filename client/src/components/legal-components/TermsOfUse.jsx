@@ -2,44 +2,43 @@ import React from 'react'
 
 const TermsOfUse = () => {
   return (
-    <div className='h-[70vh]'>
-      <h1 className='text-5xl'>Terms of Use</h1>
-      <p className='text-xl'>
-        1. Introduction
-        Welcome to SphereWise Tech! These Terms of Use ("Terms") govern your use of our website spherewise.ca (the "Website"). By accessing or using the Website, you agree to comply with and be bound by these Terms.
+    <div className='container mx-auto min-h-[70vh] px-10'>
+      <h1 className='text-4xl font-bold my-8'>Terms of Use</h1>
+      <h4 className='text-2xl text-start font-bold'>Introduction</h4>
+      <p className='text-start mt-2 mb-4'>Welcome to SphereWise Tech! These Terms of Use ("Terms") govern your use of our website spherewise.ca (the "Website"). By accessing or using the Website, you agree to comply with and be bound by these Terms.</p>
 
-        2. Acceptance of Terms
-        Please carefully read these Terms before using the Website. If you do not agree with any part of these Terms, you must not use the Website.
+      <h4 className='text-2xl text-start font-bold'>Acceptance of Terms</h4>
+      <p className='text-start mt-2 mb-4'>Please carefully read these Terms before using the Website. If you do not agree with any part of these Terms, you must not use the Website.</p>
 
-        3. User Conduct
-        You agree to use the Website for lawful purposes and in a manner consistent with all applicable laws and regulations. Prohibited activities include, but are not limited to, engaging in any conduct that may result in disruption of the Website or interference with other users' enjoyment.
+      <h4 className='text-2xl text-start font-bold'>User Conduct</h4>
+      <p className='text-start mt-2 mb-4'>You agree to use the Website for lawful purposes and in a manner consistent with all applicable laws and regulations. Prohibited activities include, but are not limited to, engaging in any conduct that may result in disruption of the Website or interference with other users' enjoyment.</p>
 
-        4. Intellectual Property
-        All content, trademarks, and intellectual property on the Website are owned by [Your Company Name]. Users may not reproduce, distribute, or use any content without prior written consent.
+      <h4 className='text-2xl text-start font-bold'>Intellectual Property</h4>
+      <p className='text-start mt-2 mb-4'>All content, trademarks, and intellectual property on the Website are owned by [Your Company Name]. Users may not reproduce, distribute, or use any content without prior written consent.</p>
 
-        5. Privacy Policy
-        Your use of the Website is also governed by our Privacy Policy, which can be found [here]. The Privacy Policy outlines how we collect, use, and protect your personal information.
+      <h4 className='text-2xl text-start font-bold'>Privacy Policy</h4>
+      <p className='text-start mt-2 mb-4'>Your use of the Website is also governed by our Privacy Policy, which can be found [here]. The Privacy Policy outlines how we collect, use, and protect your personal information.</p>
 
-        6. Disclaimer of Liability
-        [Your Company Name] is not liable for any direct, indirect, incidental, consequential, or punitive damages resulting from your use of the Website. We do not guarantee the accuracy, completeness, or timeliness of information on the Website.
+      <h4 className='text-2xl text-start font-bold'>Disclaimer of Liability</h4>
+      <p className='text-start mt-2 mb-4'>[Your Company Name] is not liable for any direct, indirect, incidental, consequential, or punitive damages resulting from your use of the Website. We do not guarantee the accuracy, completeness, or timeliness of information on the Website.</p>
 
-        7. Termination of Services
-        [Your Company Name] reserves the right to terminate or suspend your access to the Website for violation of these Terms. Such termination may occur without prior notice.
+      <h4 className='text-2xl text-start font-bold'>Termination of Services</h4>
+      <p className='text-start mt-2 mb-4'>[Your Company Name] reserves the right to terminate or suspend your access to the Website for violation of these Terms. Such termination may occur without prior notice.</p>
 
-        8. Links to Third-Party Websites
-        The Website may contain links to third-party websites. [Your Company Name] is not responsible for the content or practices of these external sites.
+      <h4 className='text-2xl text-start font-bold'>Links to Third-Party Websites</h4>
+      <p className='text-start mt-2 mb-4'>The Website may contain links to third-party websites. [Your Company Name] is not responsible for the content or practices of these external sites.</p>
 
-        9. Changes to Terms
-        We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting on the Website. Users are encouraged to review these Terms regularly for updates.
+      <h4 className='text-2xl text-start font-bold'>Changes to Terms</h4>
+      <p className='text-start mt-2 mb-4'>We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting on the Website. Users are encouraged to review these Terms regularly for updates.</p>
 
-        10. Governing Law and Jurisdiction
-        These Terms are governed by the laws of [Your Jurisdiction]. Any disputes arising out of or in connection with these Terms will be resolved in the appropriate courts of [Your Jurisdiction].
+      <h4 className='text-2xl text-start font-bold'>Governing Law and Jurisdiction</h4>
+      <p className='text-start mt-2 mb-4'>These Terms are governed by the laws of [Your Jurisdiction]. Any disputes arising out of or in connection with these Terms will be resolved in the appropriate courts of [Your Jurisdiction].</p>
 
-        11. Contact Information
-        For any questions or concerns regarding these Terms, please contact us at [your contact email or address].
+      <h4 className='text-2xl text-start font-bold'>Contact Information</h4>
+      <p className='text-start mt-2 mb-4'>For any questions or concerns regarding these Terms, please contact us at [your contact email or address].</p>
 
-        12. Accessibility
-        We are committed to ensuring the accessibility of our Terms of Use. If you require assistance or an alternative format, please contact us.</p>
+      <h4 className='text-2xl text-start font-bold'>Accessibility</h4>
+      <p className='text-start mt-2 mb-4'>We are committed to ensuring the accessibility of our Terms of Use. If you require assistance or an alternative format, please contact us.</p>
     </div>
   )
 }
