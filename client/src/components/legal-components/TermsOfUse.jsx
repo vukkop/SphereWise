@@ -2,7 +2,7 @@ import React from 'react'
 
 const TermsOfUse = () => {
   return (
-    <div className='container mx-auto min-h-[70vh] px-10'>
+    <div className='container mx-auto min-h-[70vh] mb-10 px-10'>
       <h1 className='text-4xl font-bold my-8'>Terms of Use</h1>
       <h4 className='text-2xl text-start font-bold'>Introduction</h4>
       <p className='text-start mt-2 mb-4'>Welcome to SphereWise Tech! These Terms of Use ("Terms") govern your use of our website spherewise.ca (the "Website"). By accessing or using the Website, you agree to comply with and be bound by these Terms.</p>
