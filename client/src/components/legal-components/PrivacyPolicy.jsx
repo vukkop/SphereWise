@@ -35,7 +35,9 @@ const PrivacyPolicy = () => {
       </p>
       <h4 className='text-2xl text-start font-bold'>Contact Information</h4>
       <p className='text-start mt-2 mb-10'>
-        For any questions or concerns regarding this Privacy Policy, please contact us at <a className='link highlight' href="mailto:info@spherewise.ca">info@spherewise.ca</a>.
+        For any questions or concerns regarding this Privacy Policy, please contact us at <a className='link highlight' href="mailto:info@spherewise.ca">
+          info@spherewise.ca
+        </a>.
       </p>
 
 
