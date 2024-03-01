@@ -11,9 +11,7 @@ const Blog = () => {
 
   return (
     <div className='container mx-auto'>
-
-      <h1 className="text-4xl font-bold mb-8">Our Blog</h1>
-
+      <h1 className="text-4xl font-bold my-8">Our Blog</h1>
       <div className="flex flex-wrap gap-4">
         <div className="flex-auto sm:flex-1 text-start px-4">
           <Link to='0' className="w-full">
@@ -39,7 +37,6 @@ const Blog = () => {
         <div className="text-center my-8">
           <button onClick={toggleShowMore} className="btn btn-outline btn-info">See More Articles <i className="fa-solid fa-angle-down"></i></button>
         </div>
-
       }
       {displayMore &&
         <>
@@ -60,9 +57,7 @@ const Blog = () => {
           </div>
         </>
       }
-
     </div>
-
   )
 }
 
