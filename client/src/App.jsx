@@ -46,15 +46,15 @@ function App() {
           <NavBar isLight={isLight} onUpdate={updateTheme}></NavBar>
         </div>
         <Routes>
-          <Route path="%PUBLIC_URL%/" element={<Home isLight={isLight} />} />
-          <Route path="%PUBLIC_URL%/about" element={<About />} />
-          <Route path="%PUBLIC_URL%/services" element={<Services />} />
-          <Route path="%PUBLIC_URL%/blog" element={<Blog />} />
-          <Route path="%PUBLIC_URL%/blog/:i" element={<SingleBlogPost />} />
-          <Route path="%PUBLIC_URL%/contact" element={<Contact />} />
-          <Route path="%PUBLIC_URL%/legal/termsofuse" element={<TermsOfUse />} />
-          <Route path="%PUBLIC_URL%/legal/privacypolicy" element={<PrivacyPolicy />} />
-          <Route path="%PUBLIC_URL%/legal/cookiepolicy" element={<CookiePolicy />} />
+          <Route path="/" element={<Home isLight={isLight} />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:i" element={<SingleBlogPost />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/legal/termsofuse" element={<TermsOfUse />} />
+          <Route path="/legal/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/legal/cookiepolicy" element={<CookiePolicy />} />
         </Routes>
       </div>
       <Footer isLight={isLight}></Footer>
