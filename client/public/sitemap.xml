@@ -3,35 +3,35 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://www.spherewise.ca/</loc>
+    <loc>https://www.spherewise.ca/#</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- About Page -->
   <url>
-    <loc>https://www.spherewise.ca/about</loc>
+    <loc>https://www.spherewise.ca/#/about</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Services Page -->
   <url>
-    <loc>https://www.spherewise.ca/services</loc>
+    <loc>https://www.spherewise.ca/#/services</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Contact Page -->
   <url>
-    <loc>https://www.spherewise.ca/contact</loc>
+    <loc>https://www.spherewise.ca/#/contact</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Blog Page -->
   <url>
-    <loc>https://www.spherewise.ca/blog</loc>
+    <loc>https://www.spherewise.ca/#/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
