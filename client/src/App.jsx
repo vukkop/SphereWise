@@ -6,6 +6,7 @@ import Footer from "./components/global-components/footer/Footer";
 import Home from "./views/Home";
 import About from "./views/About";
 import Services from "./views/Services";
+import SingleService from './components/services-components/SingleService';
 import Contact from "./views/Contact";
 import SeoHelmet from './components/global-components/seo/SeoHelmet';
 import Blog from './views/Blog';
@@ -49,6 +50,7 @@ function App() {
           <Route path="/" element={<Home isLight={isLight} />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/:slug" element={<SingleService />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:i" element={<SingleBlogPost />} />
           <Route path="/contact" element={<Contact />} />
