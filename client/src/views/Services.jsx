@@ -39,10 +39,9 @@ const Services = () => {
 
       <div className="min-h-[80vh] p-8">
         <h1 className="text-4xl font-bold mb-8">Our Services</h1>
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 2xl:px-40">
           {services.map((service, index) => (
-            <div key={index} className="card card-compact bg-base-100 shadow-xl">
+            <div key={index} className="card card-compact bg-base-100 shadow-lg overflow-hidden hover:ring-4 hover:ring-blue-900 hover:shadow-xl hover:scale-105 duration-300">
               <Link to={`/services/${service.slug}`}>
                 <figure className='overflow-hidden max-h-[250px]'><img src={service.img} alt={service.title} /></figure>
                 <div className="card-body">
