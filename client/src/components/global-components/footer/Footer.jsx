@@ -15,10 +15,10 @@ const Footer = ({ isLight }) => {
         </aside>
         <nav>
           <h6 className="footer-title">Services</h6>
-          <Link to={"/services"} className="link link-hover">Websites</Link>
-          <Link to={"/services"} className="link link-hover">Apps</Link>
-          <Link to={"/services"} className="link link-hover">Custom Software</Link>
-          <Link to={"/services"} className="link link-hover">E-commerce</Link>
+          <Link to={"/services/websites"} className="link link-hover">Websites</Link>
+          <Link to={"/services/applications"} className="link link-hover">Apps</Link>
+          <Link to={"/services/software"} className="link link-hover">Custom Software</Link>
+          <Link to={"/services/e-commerce"} className="link link-hover">E-commerce</Link>
         </nav>
         <nav>
           <h6 className="footer-title">Company</h6>
