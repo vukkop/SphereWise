@@ -10,7 +10,7 @@ const SingleService = () => {
     <div className='container mx-auto min-h-[70vh]'>
       <h1 className="text-4xl font-bold my-8">{service.heading}</h1>
 
-      <div className="max-w-[60%] text-left pl-2 my-10">
+      <div className="lg:max-w-[80%] text-left pl-2 my-10">
         <h2 className="text-2xl font-bold mb-4">{service.title}</h2>
         <p className="mb-6">{service.description}</p>
       </div>
