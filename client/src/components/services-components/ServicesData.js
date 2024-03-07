@@ -1,9 +1,15 @@
+import Website from "../../assets/images/services/singleService/Websites.JPEG2000";
+import Application from "../../assets/images/services/singleService/Application.JPEG2000";
+import Software from "../../assets/images/services/singleService/Software.JPEG2000";
+import ECommerce from "../../assets/images/services/singleService/ECommerce.JPEG2000";
+
 export const services = [
   {
     heading: "Custom Website Development",
     title: "Elevate Your Business with Tailored Website Development Services",
     description:
       "Welcome to our Custom Website Development services page at SphereWise Tech. Discover the power of tailored and responsive websites designed to reflect your brand and achieve your business objectives.",
+    img: Website,
     expertisePoints: [
       {
         point: "Visually Captivating Design:",
@@ -36,6 +42,7 @@ export const services = [
       "Transform Your Ideas into Innovative Apps with Our Custom App Development Solutions",
     description:
       "Unlock the potential of innovation through our Custom App Development services at SphereWise Tech. Our team specializes in crafting user-friendly applications that enhance productivity and align with your business goals.",
+    img: Application,
     expertisePoints: [
       {
         point: "Intuitive User-Centric Design:",
@@ -68,6 +75,7 @@ export const services = [
       "Precision and Innovation Unleashed - Explore Our Bespoke Software Solutions",
     description:
       "Welcome to the realm of precision and innovation at SphereWise Tech's Bespoke Software Solutions page. Our custom software development services are meticulously crafted to address your unique business needs.",
+    img: Software,
     expertisePoints: [
       {
         point: "Comprehensive Problem Solving:",
@@ -100,6 +108,7 @@ export const services = [
       "Amplify Your Online Presence with Comprehensive E-commerce Solutions",
     description:
       "Embark on a journey into the digital marketplace with SphereWise Tech's comprehensive E-commerce Solutions. From initial setup to ongoing optimization, we offer a complete suite of services to boost your online presence.",
+    img: ECommerce,
     expertisePoints: [
       {
         point: "Efficient E-commerce Setup:",
