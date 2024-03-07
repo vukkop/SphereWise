@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.49c3e134.css",
-    "main.js": "/static/js/main.13794006.js",
+    "main.css": "/static/css/main.934d1f7d.css",
+    "main.js": "/static/js/main.17cd766a.js",
     "static/js/787.d5fa4d18.chunk.js": "/static/js/787.d5fa4d18.chunk.js",
     "static/media/E-Com.JPEG2000": "/static/media/E-Com.054dd7d490aef6a5a02f.JPEG2000",
-    "static/media/Software.JPEG2000": "/static/media/Software.0d331c3fb1c5f821c2b1.JPEG2000",
+    "static/media/Software.JPEG2000": "/static/media/Software.95abe1376ed656e7f897.JPEG2000",
     "static/media/M&RSolutions.JPEG2000": "/static/media/M&RSolutions.9cb3755a2435f6333929.JPEG2000",
     "static/media/smallBusiness.JPEG2000": "/static/media/smallBusiness.59a30df9f053d8a8ddd3.JPEG2000",
     "static/media/agile.JPEG2000": "/static/media/agile.89fadae8e34a94cbbb67.JPEG2000",
     "static/media/businessPotential.JPEG2000": "/static/media/businessPotential.63872061f4c95dd02d75.JPEG2000",
+    "static/media/ECommerce.JPEG2000": "/static/media/ECommerce.cad9ad15ee72a00de9b7.JPEG2000",
     "static/media/idea.JPEG2000": "/static/media/idea.7aa949ac2394e9024c01.JPEG2000",
+    "static/media/Websites.JPEG2000": "/static/media/Websites.d8db1260099530d0b5d6.JPEG2000",
     "static/media/streamline.JPEG2000": "/static/media/streamline.e554fbec7bfbad9dd14f.JPEG2000",
     "static/media/ux.JPEG2000": "/static/media/ux.efb97cc3a14c394f76a4.JPEG2000",
     "static/media/navigating.JPEG2000": "/static/media/navigating.e91556e95ac8df5b5c26.JPEG2000",
     "static/media/security.JPEG2000": "/static/media/security.d66169db6fba4c73ada6.JPEG2000",
+    "static/media/Application.JPEG2000": "/static/media/Application.0033c074e74897123f01.JPEG2000",
     "static/media/future.JPEG2000": "/static/media/future.fb265a71bfdcba22bc21.JPEG2000",
     "static/media/Story.JPEG2000": "/static/media/Story.bb9a66b5480773223db9.JPEG2000",
     "static/media/Apps.JPEG2000": "/static/media/Apps.62be57d95aa328e86be0.JPEG2000",
@@ -28,12 +31,12 @@
     "static/media/Web.JPEG2000": "/static/media/Web.e9d2a62bb83deb780b72.JPEG2000",
     "static/media/PuppyPoodle.svg": "/static/media/PuppyPoodle.ba445df320dc59804d01be363c6ca9fc.svg",
     "index.html": "/index.html",
-    "main.49c3e134.css.map": "/static/css/main.49c3e134.css.map",
-    "main.13794006.js.map": "/static/js/main.13794006.js.map",
+    "main.934d1f7d.css.map": "/static/css/main.934d1f7d.css.map",
+    "main.17cd766a.js.map": "/static/js/main.17cd766a.js.map",
     "787.d5fa4d18.chunk.js.map": "/static/js/787.d5fa4d18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.49c3e134.css",
-    "static/js/main.13794006.js"
+    "static/css/main.934d1f7d.css",
+    "static/js/main.17cd766a.js"
   ]
 }
