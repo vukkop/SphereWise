@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react'
 import emailjs from "@emailjs/browser";
 import Input from '../global-components/forms/Input';
 import { useForm, SubmitHandler, FormProvider } from "react-hook-form"
+import { nameValidation } from '../../utils/forms/inputValidations';
 
 const ContactForm = () => {
   const [contactForm, setContactForm] = useState({
@@ -106,12 +107,7 @@ const ContactForm = () => {
       <FormProvider {...methods}>
 
         <form className='grid flex-grow gap-4 ms-5 me-5' onSubmit={e => e.preventDefault()} noValidate>
-          <Input label="name" type="text" id="name" name="name" placeholder="ex: John Smith" validation={{
-            required: {
-              value: true,
-              message: 'This field is required.',
-            },
-          }} />
+          <Input {...nameValidation} />
           <label className="form-control w-full max-w-xs error">
             <div className="label">
               <span className="label-text">Email:</span>
