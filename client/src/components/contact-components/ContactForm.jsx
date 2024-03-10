@@ -42,7 +42,6 @@ const ContactForm = () => {
           <Input {...emailValidation} />
           <Input {...phoneValidation} />
           <Input {...messageValidation} />
-
           <div>
             {loading ?
               <button disabled className="btn btn-success float-start">

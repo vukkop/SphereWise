@@ -3,19 +3,10 @@ import { useFormContext } from "react-hook-form"
 import { findInputError } from '../../../utils/forms/findInputError'
 import { isFormInvalid } from '../../../utils/forms/isFormInvalid'
 
-
 const Input = ({ name, label, type, id, placeholder, validation, multiline }) => {
   const { register, formState: { errors }, } = useFormContext()
-
-  const inputError = findInputError(errors, name
-  )
+  const inputError = findInputError(errors, name)
   const isInvalid = isFormInvalid(inputError)
-
-  // const onChangeHandler = (e) => {
-  //   const { name, value } = e.target
-  //   setContactForm((prev) => ({ ...prev, [name]: value }))
-  // }
-
 
   return (
     <>
@@ -48,7 +39,5 @@ const Input = ({ name, label, type, id, placeholder, validation, multiline }) =>
     </>
   )
 }
-
-
 
 export default Input
