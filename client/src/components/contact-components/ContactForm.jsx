@@ -1,74 +1,43 @@
 import React, { useState, useRef } from 'react'
 import emailjs from "@emailjs/browser";
 import Input from '../global-components/forms/Input';
-import { useForm, SubmitHandler, FormProvider } from "react-hook-form"
+import { useForm, FormProvider } from "react-hook-form"
 import { emailValidation, messageValidation, nameValidation, phoneValidation } from '../../utils/forms/inputValidations';
 
 const ContactForm = () => {
-  const [contactForm, setContactForm] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-  });
   const [status, setStatus] = useState(0);
   const [loading, setLoading] = useState(false);
   const form = useRef()
-
   const methods = useForm()
 
   const onSubmit = methods.handleSubmit(data => {
-    console.log(data)
+    sendEmail()
   })
 
-  const sendEmail = (e) => {
+  const sendEmail = () => {
     setLoading(true)
-
-    //Add better validation, and handle toastr behaviour in separate reusable function
-    if (!contactForm.name.trim() || !contactForm.email.trim() || !contactForm.phoneNumber.trim() || !contactForm.message.trim()) {
-      setStatus(500)
-      setLoading(false)
-      setTimeout(() => {
-        setStatus(0);
-      }, 4000);
-      return;
-    }
-
     emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
       .then((result) => {
         setStatus(result.status)
+        methods.reset()
         setLoading(false)
         setTimeout(() => {
           setStatus(0);
-        }, 4000);
+        }, 5000);
       }, (error) => {
         setStatus(error.status)
         console.log(error);
         setLoading(false)
         setTimeout(() => {
           setStatus(0);
-        }, 4000);
+        }, 5000);
       });
   };
-
-  const handleSubmit = e => {
-    e.preventDefault();
-
-    sendEmail(e)
-    setContactForm({
-      name: '',
-      email: '',
-      phone: '',
-      message: '',
-    })
-    // Perform your form submission logic here
-    console.log("Form submitted successfully!");
-  }
 
   return (
     <>
       <FormProvider {...methods}>
-        <form className='grid flex-grow gap-4 ms-5 me-5' onSubmit={e => e.preventDefault()} noValidate>
+        <form className='grid flex-grow gap-4 ms-5 me-5' ref={form} onSubmit={e => e.preventDefault()} noValidate>
           <Input {...nameValidation} />
           <Input {...emailValidation} />
           <Input {...phoneValidation} />
