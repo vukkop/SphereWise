@@ -1,119 +1,63 @@
 import React, { useState, useRef } from 'react'
 import emailjs from "@emailjs/browser";
+import Input from '../global-components/forms/Input';
+import { useForm, FormProvider } from "react-hook-form"
+import { emailValidation, messageValidation, nameValidation, phoneValidation } from '../../utils/forms/inputValidations';
 
 const ContactForm = () => {
-  const [contactForm, setContactForm] = useState({
-    name: '',
-    email: '',
-    phoneNumber: '',
-    message: '',
-  });
   const [status, setStatus] = useState(0);
   const [loading, setLoading] = useState(false);
   const form = useRef()
+  const methods = useForm()
 
-  const sendEmail = (e) => {
+  const onSubmit = methods.handleSubmit(data => {
     setLoading(true)
+    sendEmail()
+  })
 
-    //Add better validation, and handle toastr behaviour in separate reusable function
-    if (!contactForm.name.trim() || !contactForm.email.trim() || !contactForm.phoneNumber.trim() || !contactForm.message.trim()) {
-      setStatus(500)
-      setLoading(false)
-      setTimeout(() => {
-        setStatus(0);
-      }, 4000);
-      return;
-    }
-
+  const sendEmail = () => {
     emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
       .then((result) => {
         setStatus(result.status)
-        console.log(result, "Status is 200");
+        methods.reset()
         setLoading(false)
         setTimeout(() => {
           setStatus(0);
-        }, 4000);
+        }, 5000);
       }, (error) => {
         setStatus(error.status)
         console.log(error);
         setLoading(false)
         setTimeout(() => {
           setStatus(0);
-        }, 4000);
+        }, 5000);
       });
   };
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    sendEmail(e)
-    setContactForm({
-      name: '',
-      email: '',
-      phoneNumber: '',
-      message: '',
-    })
-  }
-
-  const onChangeHandler = (e) => {
-    const { name, value } = e.target
-    setContactForm((prev) =>
-      ({ ...prev, [name]: value }))
-  }
-
   return (
     <>
-      <form className='grid flex-grow gap-4 ms-5 me-5' ref={form} onSubmit={handleSubmit} noValidate action="">
-        <label className="form-control w-full max-w-xs">
-          <div className="label">
-            <span className="label-text">Name:</span>
+      <FormProvider {...methods}>
+        <form className='grid flex-grow gap-4 ms-5 me-5' ref={form} onSubmit={e => e.preventDefault()} noValidate>
+          <Input {...nameValidation} />
+          <Input {...emailValidation} />
+          <Input {...phoneValidation} />
+          <Input {...messageValidation} />
+          <div>
+            {loading ?
+              <button disabled className="btn btn-success float-start">
+                <span className="loading loading-spinner"></span>
+                Sending message
+              </button>
+              :
+              <button onClick={onSubmit} className="btn btn-success float-start">
+                <span>
+                  Send message
+                </span>
+              </button>
+            }
           </div>
-          <input type="text" name='name' onChange={onChangeHandler} value={contactForm.name} placeholder="ex: John Smith" className="input input-bordered w-full max-w-xs" />
-          {/* <div className="label">
-          <span className="label-text-alt">Bottom Left label</span>
-        </div> */}
-        </label>
-        <label className="form-control w-full max-w-xs">
-          <div className="label">
-            <span className="label-text">Email:</span>
-          </div>
-          <input type="email" name='email' onChange={onChangeHandler} value={contactForm.email} placeholder="ex: example@email.com" className="input input-bordered w-full max-w-xs" />
-          {/* <div className="label">
-          <span className="label-text-alt">Bottom Left label</span>
-        </div> */}
-        </label>
-        <label className="form-control w-full max-w-xs">
-          <div className="label">
-            <span className="label-text">Phone number:</span>
-          </div>
-          <input type="text" name='phoneNumber' onChange={onChangeHandler} value={contactForm.phoneNumber} placeholder="ex: +1 123 123 1234" className="input input-bordered " />
-          {/* <div className="label">
-          <span className="label-text-alt">Bottom Left label</span>
-        </div> */}
-        </label>
-        <label className="form-control">
-          <div className="label">
-            <span className="label-text">Message:</span>
-          </div>
-          <textarea name='message' onChange={onChangeHandler} value={contactForm.message} className="textarea textarea-bordered h-36 w-full max-w-md mb-4" placeholder="Please write your message here"></textarea>
-          {/* <div className="label">
-            <span className="label-text-alt">Your bio</span>
-          </div> */}
-        </label>
-        <div>
-          {loading ?
-            <button disabled type='submit' className="btn btn-success float-start">
-              <span className="loading loading-spinner"></span>
-              Sending message
-            </button>
-            :
-            <button type='submit' className="btn btn-success float-start">
-              <span>
-                Send message
-              </span>
-            </button>
-          }
-        </div>
-      </form >
+        </form >
+      </FormProvider>
 
       {status !== 0 &&
         <div className="toast toast-end">
