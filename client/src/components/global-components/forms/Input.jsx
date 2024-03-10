@@ -4,11 +4,17 @@ import { findInputError } from '../../../utils/forms/findInputError'
 import { isFormInvalid } from '../../../utils/forms/isFormInvalid'
 
 
-const Input = ({ label, type, id, name, validation, placeholder, multiline }) => {
+const Input = ({ name, label, type, id, placeholder, validation, multiline }) => {
   const { register, formState: { errors }, } = useFormContext()
 
-  const inputError = findInputError(errors, label)
+  const inputError = findInputError(errors, name
+  )
   const isInvalid = isFormInvalid(inputError)
+
+  // const onChangeHandler = (e) => {
+  //   const { name, value } = e.target
+  //   setContactForm((prev) => ({ ...prev, [name]: value }))
+  // }
 
 
   return (
@@ -17,7 +23,7 @@ const Input = ({ label, type, id, name, validation, placeholder, multiline }) =>
         multiline ? (
           <label className="form-control" >
             <div className="label">
-              <span className="label-text">Message:</span>
+              <span className="label-text capitalize">{label}:</span>
             </div>
             <textarea name={name} placeholder={placeholder} {...register(`${name}`, validation)} className="textarea textarea-bordered h-36 w-full max-w-md mb-4"></textarea>
             <div className="label">

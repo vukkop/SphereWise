@@ -36,7 +36,7 @@ export const emailValidation = {
 
 export const phoneValidation = {
   name: "phoneNumber",
-  label: "phone",
+  label: "phone number",
   type: "text",
   id: "phoneNumber",
   placeholder: "ex: +1 123 123 1234",
