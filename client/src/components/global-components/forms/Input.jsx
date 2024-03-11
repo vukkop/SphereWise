@@ -16,10 +16,10 @@ const Input = ({ name, label, type, id, placeholder, validation, multiline }) =>
             <div className="label">
               <span className="label-text capitalize">{label}:</span>
             </div>
-            <textarea name={name} placeholder={placeholder} {...register(`${name}`, validation)} className="textarea textarea-bordered h-36 w-full max-w-md mb-4"></textarea>
+            <textarea name={name} placeholder={placeholder} {...register(`${name}`, validation)} className={`textarea textarea-bordered h-36 w-full max-w-md ${isInvalid && 'textarea-error'}`}></textarea>
             <div className="label">
               {isInvalid &&
-                <span className="label-text-alt text-error">{inputError.error.message}</span>
+                <span className="label-text-alt text-error"><i className="fa-solid fa-circle-exclamation"></i> {inputError.error.message}</span>
               }
             </div>
           </label >
@@ -28,10 +28,10 @@ const Input = ({ name, label, type, id, placeholder, validation, multiline }) =>
             <div className="label">
               <span className="label-text capitalize">{label}:</span>
             </div>
-            <input id={id} type={type} name={name} placeholder={placeholder} {...register(name, validation)} className="input input-bordered w-full max-w-xs" />
+            <input id={id} type={type} name={name} placeholder={placeholder} {...register(name, validation)} className={`input input-bordered w-full max-w-xs ${isInvalid && 'input-error'}`} />
             <div className="label">
               {isInvalid &&
-                <span className="label-text-alt text-error">{inputError.error.message}</span>
+                <span className="label-text-alt text-error"> <i className="fa-solid fa-circle-exclamation"></i> {inputError.error.message}</span>
               }
             </div>
           </label>)

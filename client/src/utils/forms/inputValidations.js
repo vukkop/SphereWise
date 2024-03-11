@@ -7,7 +7,7 @@ export const nameValidation = {
   validation: {
     required: {
       value: true,
-      message: "This field is required.",
+      message: "Name is required.",
     },
     maxLength: {
       value: 50,
@@ -25,7 +25,12 @@ export const emailValidation = {
   validation: {
     required: {
       value: true,
-      message: "This field is required.",
+      message: "Email is required.",
+    },
+    pattern: {
+      value:
+        /(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/,
+      message: "Invalid email.",
     },
     maxLength: {
       value: 50,
@@ -37,13 +42,17 @@ export const emailValidation = {
 export const phoneValidation = {
   name: "phoneNumber",
   label: "phone number",
-  type: "text",
+  type: "tel",
   id: "phoneNumber",
-  placeholder: "ex: +1 123 123 1234",
+  placeholder: "ex: +12221231234",
   validation: {
     required: {
       value: true,
-      message: "This field is required.",
+      message: "Phone number is required.",
+    },
+    pattern: {
+      value: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
+      message: "Invalid phone number.",
     },
     maxLength: {
       value: 50,
@@ -62,7 +71,11 @@ export const messageValidation = {
   validation: {
     required: {
       value: true,
-      message: "This field is required.",
+      message: "Message is required.",
+    },
+    maxLength: {
+      value: 5000,
+      message: "Maximum 5000 characters.",
     },
   },
 };
