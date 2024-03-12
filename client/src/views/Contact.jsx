@@ -1,5 +1,6 @@
 import React from 'react'
 import ContactForm from '../components/contact-components/ContactForm';
+import GoogleMap from '../components/contact-components/GoogleMap';
 
 const Contact = () => {
   const contactInfo = {
@@ -25,14 +26,10 @@ const Contact = () => {
             </div>
             <div className='mt-5 mb-7'>
               <h4 className="text-3xl mb-1">Address:</h4>
-              <a className="text-xl underline" href='#'>{contactInfo.address}</a>
+              <p className="text-xl underline" >{contactInfo.address}</p>
             </div>
-            <div className='mt-5 mb-7 flex justify-center'>
-              {/* TO DO:
-                Implement google maps API instead using iframe
-              */}
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.091907793846!2d-123.12842622322509!3d49.27465567132224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673d147892327%3A0xf6d93a12934903c!2s1310%20Richards%20St%2C%20Vancouver%2C%20BC%20V6B%203G6!5e0!3m2!1sen!2sca!4v1706570347480!5m2!1sen!2sca" width="80%" height="400" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            <GoogleMap />
+
           </div>
         </div>
         <div className="divider lg:divider-horizontal">OR</div>
