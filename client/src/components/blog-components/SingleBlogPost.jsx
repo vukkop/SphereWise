@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams } from "react-router";
 import { posts } from './BlogPosts';
 import { Link } from 'react-router-dom';
+import ImageWithLoading from '../global-components/images/ImageWithLoading';
 
 const SingleBlogPost = () => {
   const { i } = useParams()
@@ -19,7 +20,7 @@ const SingleBlogPost = () => {
         <h4 className="text-3xl font-semibold my-4">{posts[i].heading}</h4>
         <span className="text-gray-500 italic">{posts[i].date}</span>
         <div className='my-8'>
-          <img className="float-end rounded-xl object-cover w-full md:w-[50%] h-80 mb-4 ml-4" src={posts[i].img} alt="Blog post" />
+          <ImageWithLoading src={posts[i].img} alt="Blog post" classes="float-end rounded-xl object-cover w-full md:w-[50%] h-80 mb-4 ml-4" />
           {
             article.map((p, i) =>
               <div key={i}>
