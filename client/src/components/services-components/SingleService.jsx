@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom';
 import { services } from './ServicesData';
+import ImageWithLoading from '../global-components/images/ImageWithLoading';
 
 const SingleService = () => {
   const { slug } = useParams();
@@ -15,7 +16,7 @@ const SingleService = () => {
         <p className="mb-6">{service.description}</p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-        <img src={service.img} alt={slug} className="rounded-3xl px-2" />
+        <ImageWithLoading src={service.img} alt={slug} classes="rounded-3xl px-2 h-full" />
 
         <div className='flex flex-col text-left pl-2 lg:pl-10'>
           <h3 className="text-xl font-bold mb-4">Our Expertise</h3>
