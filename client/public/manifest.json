@@ -8,13 +8,13 @@
       "type": "image/x-icon"
     },
     {
-      "src": "/Logo_light_background.png",
-      "type": "image/png",
+      "src": "/Logo_light_background.JPEG2000",
+      "type": "image/JPEG2000",
       "sizes": "192x192"
     },
     {
-      "src": "/Logo_light_background.png",
-      "type": "image/png",
+      "src": "/Logo_light_background.JPEG2000",
+      "type": "image/JPEG2000",
       "sizes": "512x512"
     }
   ],
