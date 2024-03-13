@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 
 const ImageWithLoading = ({ src, alt, classes }) => {
   const [loading, setLoading] = useState(true);
+  if (!classes) {
+    classes = ''
+  }
 
   const handleImageLoaded = () => {
-    setTimeout(() => {
-      console.log(classes);
-      setLoading(false);
-    }, 5000);
+    setLoading(false);
   };
 
   return (

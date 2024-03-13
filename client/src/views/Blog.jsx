@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { posts } from '../components/blog-components/BlogPosts';
 import { Link } from 'react-router-dom';
+import ImageWithLoading from '../components/global-components/images/ImageWithLoading';
 
 const Blog = () => {
   const [displayMore, setDisplayMore] = useState(false);
@@ -15,7 +16,7 @@ const Blog = () => {
       <div className="flex flex-wrap gap-4">
         <div className="flex-auto sm:flex-1 text-start px-4">
           <Link to='0' className="w-full">
-            <img className="rounded-xl object-cover w-full h-80 mb-4" src={posts[0].img} alt="Blog post" />
+            <ImageWithLoading src={posts[0].img} alt="Blog post" classes="rounded-xl object-cover w-full h-80 mb-4" />
             <span className="text-gray-500">{posts[0].date}</span>
             <h4 className="text-3xl font-semibold my-4">{posts[0].heading}</h4>
             <p className="max-w-xl text-lg text-gray-500">{posts[0].shortArticle}</p>
@@ -24,7 +25,7 @@ const Blog = () => {
         <div className="flex-auto sm:flex-1 flex flex-col gap-6 text-start px-4">
           {posts.slice(1, 4).map((post, i) => (
             <Link to={`${i + 1}`} key={i} className="md:flex group">
-              <img className="rounded-xl object-cover w-48 h-40" src={post.img} alt="Blog post" />
+              <ImageWithLoading src={post.img} alt="Blog post" classes="rounded-xl object-cover w-48 h-40" />
               <div className=" md:mt-0 md:ml-6 pt-2">
                 <span className="block text-gray-500 mb-1">{post.date}</span>
                 <h4 className="text-xl font-semibold">{post.heading}</h4>
