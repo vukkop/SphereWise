@@ -44,7 +44,7 @@ const Blog = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 xl:px-20 mt-10 text-start">
             {posts.slice(4, posts.length).map((post, i) => (
               <Link to={`${i + 4}`} key={i} className="flex flex-col items-start sm:items-center px-6">
-                <img className="rounded-xl object-cover w-48 sm:w-full h-40" src={post.img} alt="Blog post" />
+                <ImageWithLoading src={post.img} alt="Blog post" classes="rounded-xl object-cover w-48 sm:w-full h-40" />
                 <div className="mt-2">
 
                   <span className="block text-gray-500 mb-2">{post.date}</span>
