@@ -4,6 +4,7 @@ import WebImg from '../assets/images/services/Web.JPEG2000'
 import AppImg from '../assets/images/services/Apps.JPEG2000'
 import SoftwareImg from '../assets/images/services/Software.JPEG2000'
 import EComImg from '../assets/images/services/E-Com.JPEG2000'
+import ImageWithLoading from '../components/global-components/images/ImageWithLoading';
 
 const Services = () => {
   const services = [
@@ -43,7 +44,9 @@ const Services = () => {
           {services.map((service, index) => (
             <div key={index} className="card card-compact bg-base-100 shadow-lg overflow-hidden hover:ring-4 hover:ring-blue-900 hover:shadow-xl hover:scale-105 duration-300">
               <Link to={`/services/${service.slug}`}>
-                <figure className='overflow-hidden max-h-[250px]'><img src={service.img} alt={service.title} /></figure>
+                <figure className='overflow-hidden max-h-[250px]'>
+                  <ImageWithLoading src={service.img} alt={service.title} skeletClasses="w-full h-[250px] rounded-bl-none rounded-br-none" />
+                </figure>
                 <div className="card-body">
                   <h2 className="text-2xl font-bold mb-4">{service.title}</h2>
                   <p className="text-gray-500">{service.description}</p>
