@@ -35,7 +35,17 @@ const GoogleMap = () => {
       title: 'SphereWise Tech',
     });
     const infoWindow = new google.maps.InfoWindow({
-      content: '<div style="color: #15191e"><h3 style="font-weight: bold; font-size: 16px; margin-bottom: 5px;">SphereWise Tech</h3><p>From amazing websites to innovative app solutions and bespoke software development</p></div>',
+      content: `<div style="color: #15191e; display: flex; align-items: center;">
+                  <div>
+                    <img src='https://spherewise.ca/favicon.ico'>
+                  </div >
+                  <div style='padding: 10px;'>
+                    <h3 style="font-weight: bold; font-size: 16px; margin-bottom: 5px;" >
+                    SphereWise Tech
+                    </h3>
+                    <p>From amazing websites to innovative app solutions and bespoke software development</p>
+                  </div >
+                </div > `,
     });
     infoWindow.open(map, marker);
     marker.addListener('click', () => {

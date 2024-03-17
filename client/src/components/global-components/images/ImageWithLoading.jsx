@@ -10,6 +10,8 @@ const ImageWithLoading = ({ src, alt, classes, skeletClasses }) => {
   }
 
   const handleImageLoaded = () => {
+    // setTimeout(() => {
+    // }, 5000);
     setLoading(false);
   };
 

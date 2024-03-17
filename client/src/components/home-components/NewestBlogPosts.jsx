@@ -1,6 +1,7 @@
 import React from 'react'
 import { posts } from '../blog-components/BlogPosts';
 import { Link } from 'react-router-dom';
+import ImageWithLoading from '../global-components/images/ImageWithLoading';
 
 const NewestBlogPosts = () => {
   return (
@@ -16,7 +17,7 @@ const NewestBlogPosts = () => {
         </div>
         {posts.slice(0, 2).map((post, i) => (
           <Link key={i} to={`/blog/${i}`} className="col-span-7 sm:col-span-3 md:col-span-2 flex flex-col items-start sm:items-center px-6">
-            <img alt="Blog post" className="rounded-xl object-cover w-48 sm:w-full h-40" src={post.img} />
+            <ImageWithLoading src={posts[i].img} alt="Blog post" classes="rounded-xl object-cover w-48 sm:w-full h-40" />
             <div className="mt-2">
 
               <span className="block text-gray-500 mb-2">{post.date}</span>
