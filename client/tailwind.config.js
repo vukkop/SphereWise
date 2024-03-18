@@ -7,6 +7,16 @@ export const theme = {
     xs: { min: "430px", max: "639px" },
     ..._screens,
   },
-  extend: {},
+  extend: {
+    keyframes: {
+      slideLeft: {
+        "0%": { marginLeft: "100%" },
+        "100%": { marginLeft: "0" },
+      },
+    },
+    animation: {
+      slideLeft: "slideLeft 1000ms ease-in-out",
+    },
+  },
 };
 export const plugins = [require("daisyui")];
