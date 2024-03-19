@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import StoryImg from '../assets/images/about/Story.JPEG2000'
 import TeamImg from '../assets/images/about/Team.JPEG2000'
 
 export const About = () => {
+  const [loading, setLoading] = useState(true);
+
+  const handleImageLoaded = () => {
+    // setTimeout(() => {
+    // }, 2000);
+    setLoading(false);
+  };
   return (
 
     <div className="container mx-auto  p-8">
       <h1 className="text-4xl font-bold">About Us</h1>
-
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-10">
         <div className='flex flex-col justify-center'>
@@ -16,11 +22,13 @@ export const About = () => {
             SphereWise Tech was founded with a vision to empower businesses of all sizes through innovative and tailored website and software solutions. The company's core principles include inclusivity, client-centricity, and a commitment to excellence. Their goal is to champion the growth of businesses, regardless of size, by providing strategic assets in the form of websites and custom software. Through a focus on innovation, adaptability, and quality, SphereWise Tech aims to transform small ventures into impactful enterprises, one innovative solution at a time. Through passion, innovation, and a commitment to excellence, we have evolved into a trusted partner for businesses seeking cutting-edge digital solutions.
           </p>
         </div>
-        <img className='rounded-xl' src={StoryImg} alt="Our Story" />
+        {loading && <div className='h-[274px] sm:h-[432px] md:h-[528px] lg:h-[348px] xl:h-[444px] 2xl:h-[540px]'></div>}
+        <img src={StoryImg} alt="Our Story" onLoad={handleImageLoaded} className={`rounded-xl ${loading ? 'hidden' : 'animate-[slideLeft_500ms_ease-in-out]'}`} />
       </div>
 
       <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-8 mb-8">
-        <img className='rounded-xl' src={TeamImg} alt="Our Team" />
+        {loading && <div className='h-[274px] sm:h-[432px] md:h-[528px] lg:h-[348px] xl:h-[444px] 2xl:h-[540px]'></div>}
+        <img src={TeamImg} alt="Our Team" onLoad={handleImageLoaded} className={`rounded-xl ${loading ? 'hidden' : 'animate-[slideRight_500ms_ease-in-out]'}`} />
         <div className='flex flex-col justify-center'>
           <h2 className="text-2xl font-bold mb-4">Our Team</h2>
           <p className="text-gray-500">
@@ -28,7 +36,6 @@ export const About = () => {
           </p>
         </div>
       </div>
-
 
       {/* You can add more sections as needed, such as company values, milestones, etc. */}
     </div>

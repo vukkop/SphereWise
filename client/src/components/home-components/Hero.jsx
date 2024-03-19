@@ -18,7 +18,7 @@ const Hero = () => {
           <div className='relative h-[70vh] w-full rounded-br-2xl rounded-bl-2xl lg:rounded-tr-2xl lg:rounded-br-2xl lg:rounded-bl-none overflow-hidden border-none -mt-4'>
             <img
               src={Idea} alt='Idea'
-              className=" animate-[slideLeft_500ms_ease-in-out] absolute insert-0 h-full w-full object-cover filter grayscale contrast-200"
+              className='animate-[slideLeft_500ms_ease-in-out] absolute insert-0 h-full w-full object-cover filter grayscale contrast-200'
               style={{ display: loading ? 'none' : 'block' }}
               onLoad={handleImageLoaded}
             />
