@@ -13,9 +13,14 @@ export const theme = {
         "0%": { marginLeft: "100%" },
         "100%": { marginLeft: "0" },
       },
+      slideRight: {
+        "0%": { marginLeft: "-100%" },
+        "100%": { marginLeft: "0" },
+      },
     },
     animation: {
       slideLeft: "slideLeft 1000ms ease-in-out",
+      slideRight: "slideRight 1000ms ease-in-out",
     },
   },
 };
