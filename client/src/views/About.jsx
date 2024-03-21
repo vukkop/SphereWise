@@ -18,7 +18,7 @@ export const About = () => {
         <h2 className="text-3xl font-bold mb-4">On a Mission to Make Technology in Sync with User Needs and Aspirations</h2>
         <div>
           <h2 className="text-3xl font-bold mb-4">Values</h2>
-          <ul className="text-xl text-left pl-32">
+          <ul className="text-xl text-left pl-[10%] xs:pl-[35%] sm:pl-[35%]">
             <li><i class="fa-solid fa-circle-check text-info"></i> Trustworthy</li>
             <li><i class="fa-solid fa-circle-check text-info"></i> Reliable</li>
             <li><i class="fa-solid fa-circle-check text-info"></i> Compassionate</li>
