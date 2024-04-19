@@ -16,7 +16,7 @@ const SingleService = () => {
         <p className="mb-6">{service.description}</p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-        <ImageWithLoading src={service.img} alt={slug} classes="rounded-3xl px-2 h-full" />
+        <ImageWithLoading src={service.img} alt={slug} classes="rounded-3xl object-cover px-2 h-full" />
 
         <div className='flex flex-col text-left pl-2 lg:pl-10'>
           <h3 className="text-xl font-bold mb-4">Our Expertise</h3>
